@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Laptop Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Courgette&family=El+Messiri&family=Mate+SC&family=Oregano&family=Playball&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amita&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?ver=1.5">
+    <link rel="stylesheet" href="../CSS/style.css?ver=1.2">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+    <style>
+        p {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="LapEditBg">
+
+    <!-------- Header start-------->
+
+    <div class="container-fluid headBg">
+        <div class="row">
+            <div class="col-12">
+                <div class="my-2 d-flex">
+                    <div class="logoBg ms-5">
+                        <div class="d-flex mx-3 d-none d-md-flex">
+                            <div class="">
+                                <img src="../IMAGES/marriageLogo.jpg" style="width:40px; height:40px;" alt="" class="mt-1">
+                            </div>
+                            <h1 class="mainHead mt-2">Malayali <span class="marriageHead">Marriage</span></h1>
+                        </div>
+                    </div>
+
+                    <!-------- MobileView Head -------->
+                    <div class="headMobileBg mt-3 d-md-none">
+                        <div class="d-flex">
+                            <div class="row">
+                                <div class="col-1 text-center mt-2">
+                                    <a href="" class=""><i class="material-icons iconBell">
+                                            notifications
+                                        </i></a>
+                                </div>
+                                <div class="col-10 d-flex ps-4 mt-1">
+                                    <img src="../IMAGES/marriageLogo.jpg" style="width:20px; height:20px;" alt="" class="mt-2 ms-5">
+                                    <h1 class="mainHead text-white mt-1">Malayali <span class="marriageHead text-white">Marriage</span></h1>
+                                </div>
+                                <div class="col-1 text-center">
+                                    <button class="mobileSearchIcon mt-1"><i class="ri-search-line"></i></button>
+                                </div>
+                                <!-- <i class="ri-menu-line iconMenu ms-4"></i> -->
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg p-0 ms-auto me-auto headMobileBg  d-none d-md-flex">
+                        <div class="container-fluid p-0">
+                            <!-- <a class="navbar-brand d-none d-md-flex loginStyle" href="#">Login</a> -->
+                            <button class="navbar-toggler mt-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class=" text-white navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">
+                                            <span class="headOptions">HOME</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">SEARCH</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">MATCHES</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">INBOX</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">CHAT</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">SERVICE</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">PAYMENT</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headlastOption">CONTACT US</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ms-auto">
+                            <div class="d-none d-md-flex justify-space-around">
+                                <!-- <button class="btn login rounded-pill">Login</button> -->
+                                <i class="material-icons iconBell ms-4">
+                                    notifications
+                                </i>
+                                <img src="../IMAGES/avatarImg.png" alt="" class="avatarImg ms-4">
+                                <i class="ri-menu-line iconMenu ms-4"></i>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 mt-4 d-none d-md-block leftSection">
+                <div class="bg-white Section px-1 py-1">
+                    <div class="mx-3 my-3 Border">
+                        <div class="d-flex">
+                            <div class="mt-2">
+                                <img src="../IMAGES/profileImg.jpg" alt="" class="profileImg ms-2">
+                            </div>
+                            <div class="mt-2 ms-3 ">
+                                <h6 class="headStyle "><strong>Thomas (MM 5764002)</strong></h6>
+                                <h6 class="headStyle ">Account : Silver</h6>
+                                <div class="text-center">
+                                    <button class="btnPink mb-4  ">Upgrade Membership</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress mx-2">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated barBg" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                        </div>
+                        <div class="text-center mt-2">
+                            <h4 class="completed">60% Completed profile</h4>
+                        </div>
+                        <div class="row leftIcons">
+                            <div class="col-6 text-center">
+                                <h6><i class="ri-camera-fill"></i> Manage Photos</h6>
+                            </div>
+                            <div class="col-6 text-center">
+                                <h6><strong><i class="ri-edit-box-line"></i></strong> Edit My Profile</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-3 my-4 Border">
+                        <div class="row mx-1 my-3">
+                            <div class="col-xl-6 col-lg-12 text-center">
+                                <button class="btnViolet"><i class="ri-user-3-fill"></i> Matches</button>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 text-center">
+                                <button class="blueBtn mt-lg-2 mt-xl-0"><i class="ri-search-line"></i> Search</button>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 mt-3 text-center">
+                                <button class="btnYellow"><i class="ri-mail-line"></i> Inbox</button>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 mt-3 text-center">
+                                <button class="redBtn"><i class="ri-chat-3-line"></i> Messages</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-3 my-4 p-2 Border Messages">
+                        <div class="row mt-2">
+                            <div class="col-12 text-center">
+                                <h5 class="text-"><i class="ri-mail-fill loginMsgIcon"></i> &nbsp;MESSAGES</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-2 borderBottom">
+                            <div class="col-xl-2 col-lg-2 text-end mt-1">
+                                <a href=""><i class="ri-heart-3-fill heart"></i></a>
+                            </div>
+                            <div class=" col-xl-8 col-lg-8 mt-2">
+                                <p class="fs-6">Interests</p>
+                            </div>
+                            <div class="col-xl-2 col-lg-12 mt-2">
+                                <a href="" class="numBorder px-2">2</a>
+                            </div>
+                        </div>
+                        <div class="row mt-2 borderBottom">
+                            <div class="col-xl-2 col-lg-2 text-end mt-2">
+                                <a href=""><i class="ri-star-s-fill pinkStarLaptopView"></i></a>
+                            </div>
+                            <div class=" col-xl-8 col-lg-8 mt-2">
+                                <p class="fs-6">Shortlist</p>
+                            </div>
+                            <div class="col-xl-2 col-lg-12 mt-2">
+                                <a href="" class="numBorder px-2">0</a>
+                            </div>
+                        </div>
+                        <div class="row mt-3 borderBottom">
+                            <div class="col-xl-2 col-lg-2 text-end">
+                                <a href=""><i class="material-icons eye">visibility</i></a>
+                            </div>
+                            <div class=" col-xl-8 col-lg-8">
+                                <p class="fs-6">Profile View</p>
+                            </div>
+                            <div class="col-xl-2 col-lg-12">
+                                <a href="" class="numBorder px-1">25</a>
+                            </div>
+                        </div>
+                        <div class="row mt-2 borderBottom">
+                            <div class="col-xl-2 col-lg-2 text-end mt-2">
+                                <a href=""><i class="material-icons call">phone</i></a>
+                            </div>
+                            <div class=" col-xl-8 col-lg-8 mt-2">
+                                <p class="fs-6">Contact View</p>
+                            </div>
+                            <div class="col-xl-2 col-lg-12 mt-2">
+                                <a href="" class="numBorder px-2">1</a>
+                            </div>
+                        </div>
+                        <div class="row mt-2 borderBottom">
+                            <div class="col-xl-2 col-lg-2 text-end mt-1">
+                                <a href=""><i class="material-icons request">volunteer_activism</i></a>
+                            </div>
+                            <div class=" col-xl-8 col-lg-8 mt-2">
+                                <p class="fs-6">Requests</p>
+                            </div>
+                            <div class="col-xl-2 col-lg-12 mt-2">
+                                <a href="" class="numBorder px-2">2</a>
+                            </div>
+                        </div>
+                        <div class="row mt-2 ">
+                            <div class="col-xl-2 col-lg-2 text-end mt-1">
+                                <a href=""><i class="material-icons accept">task_alt</i></a>
+                            </div>
+                            <div class=" col-xl-8 col-lg-8 mt-2">
+                                <p class="fs-6">Accepted</p>
+                            </div>
+                            <div class="col-xl-2 col-lg-12 mt-2">
+                                <a href="" class="numBorder px-2">1</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-3 my-4 Border">
+                        <div class="row mt-3">
+                            <div class="col-12 text-center">
+                                <h5>Account Settings</h5>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-6 mt-2 ps-4">
+                                <p class="account"><i class="ri-mail-fill"></i> &nbsp;SMS/Email Alerts</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-6 mt-2 ps-3">
+                                <p class="account"><i class="ri-eye-off-fill"></i> &nbsp;Hide Profile</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-6 mt-1 ps-4">
+                                <p class="account"><i class="ri-lock-unlock-fill"></i> &nbsp;Edit Password</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-6 mt-1 ps-3">
+                                <p class="account"><i class="ri-delete-bin-5-fill"></i> &nbsp;Delete Profile</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-6 mt-1 ps-4">
+                                <p class="account"><i class="ri-microsoft-fill"></i> &nbsp;Add Trust Badge</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-6 mt-1 ps-3">
+                                <p class="account"><i class="material-icons fs-6">bookmark</i> &nbsp;Add Referral Code</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-6 ps-4">
+                                <p class="account"><i class="ri-logout-circle-r-line"></i> &nbsp;Logout</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-3 my-4 Border">
+                        <div class="row m-3">
+                            <div class="col-xl-4 col-lg-12">
+                                <div class="mt-1">
+                                    <a href="" class=""><i class="ri-phone-fill callIcon fs-2 p-2 bg-info"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-12 mt-lg-3 mt-xl-0 srcHelp">
+                                <h5>Helpline</h5>
+                                <h5>+91 807 8000 801</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-3 my-4 Border leftsectnCrownBox">
+                        <div class="row my-2">
+                            <div class="col-xl-4 col-lg-12">
+                                <div class="mt-4 ms-4">
+                                    <img src="../IMAGES/loginPageCrown.png" alt="" class="loginPageCrown">
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-12 pe-3">
+                                <p class="text-center">Make your Profile FEATURED For 30 Days By Inviting A Friend</p>
+                                <div class="text-center m-0 p-0">
+                                    <button class="btnLightblue text-black fs-6 px-1 py-0 m-0">Click Here</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-0 m-0">
+                            <div class="col-12">
+                                <h6>Featured Profiles receives 10X times more response from the Matches</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-3 my-4 Border">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="text-secondary borderBottomgrey p-3">Download App</h5>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <h6 class="text-secondary ps-3 downloadAppCont">Experience Kerala Marriage through our mobile apps..Download free mobile app | Search Smarter, Match Faster</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-4">
+                            <div class="col-xl-6 col-lg-12  col-6">
+                                <div class="text-xl-end text-center">
+                                    <img src="../IMAGES/Googleplay.jpg" alt="" style="width: 110px; height: 30px;">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-6 mt-2 mt-xl-0">
+                                <div class="text-xl-start text-center">
+                                    <img src="../IMAGES/Appstore.jpg" alt="" style="width: 110px; height: 30px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leftSectnverticalBorder mx-3 my-4">
+                    </div>
+                    <div class="row mx-3 my-4 leftvertBorder">
+                    </div>
+                    <div class="row mx-3 my-4 leftvertBorder">
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xl-9 col-lg-9 col-12">
+                <div class="bg-white Section mt-4 p-4">
+                    <div class="Border">
+                        <div class="d-flex mt-4 justify-content-center  d-md-none  ">
+                            <ul class="nav nav-pills loginMobileTab nav-fill" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active LoginMyMatchBtn searchTab " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">BASIC</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link LoginPreferenceBtn searchTab" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">ID SEARCH</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link LoginStarMatchBtn searchTab" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"> ADVANCED</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12  mt-4 d-none d-md-block mb-lg-4 px-5 srchNav">
+                                    <ul class="nav nav-pills nav-fill mx-xl-4 pt-2" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link homeBtn active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">SEARCH</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link BtnIDSearch" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">ID SEARCH</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link BtnSaved" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">SAVED SEARCH</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"></div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-md-none py-4 ms-3 searchColor">
+                            <h4>Basic Information</h4>
+                        </div>
+                        <div class="col-xl-12 m-xl-4 d-none d-md-flex justify-content-center ">
+                            <h5 class=" searchIcon">I am looking for a <i class="material-icons arrowSearch ">
+                            arrow_right_alt</i> Bride </h5>
+                            <img src="../IMAGES/loginpgeAvatar.png" alt="" style="width: 30px; height: 30px;">
+                        </div>
+                        <div class="col-12 m-xl-4 d-md-none ">
+                            <h5 class="text-center searchBclr">Looking for a <i class="material-icons arrowSearch ">
+                            arrow_right_alt
+                        </i> Bride <img src="../IMAGES/loginpgeAvatar.png" alt="" style="width: 30px; height: 30px;"></h5>
+                        </div>
+                        <form class="ms-lg-2 ms-xl-5 ms-sm-2 searchForm " action="">
+                            <div class="container-fluid">
+                                <div class="row mt-4 pt-3 me-xl-5 ">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Age</p>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-6 ">
+                                        <input class="form-control" type="text" placeholder="Age From">
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-6">
+                                        <input class="form-control" type="text" placeholder="Age To">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Height</p>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-6">
+                                        <input class="form-control" type="text" placeholder="Height From">
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-6">
+                                        <input class="form-control" type="text" placeholder="Height To">
+                                    </div>
+                                </div>
+                                <div class="row  mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Marital Status</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Never Married">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Marital Status">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5 ">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Religion</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex ">
+                                        <input class="form-control" class="form-control" type="text" placeholder="Christian">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Religion">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Caste</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Caste">
+                                    </div>
+                                </div>
+                                <div class="row d-none d-md-flex mt-5 my-5 px-4">
+                                    <div class="col-xl-6 col-lg-6 ps-0 ms-0 text-start ">
+                                        <button class="searchBtn  w-100 mt-3 me-0">Search By Location </button>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 text-end pe-5">
+                                        <button class=" searchBtn  w-100 mt-3">Search By Distance</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 my-3 w-100 d-md-none searchDmd">
+                                <h4>Only For Premium Member</h4>
+                            </div>
+                            <div class="container-fluid ">
+                                <div class="col-12 d-md-none ms-3 searchColor">
+                                    <h4>Location</h4>
+                                </div>
+                                <div class="row mt-xl-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Native Country</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="India">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Country">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Native State</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Kerala">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="State">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Native District</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="District">
+                                    </div>
+                                </div>
+                                <div class="my-2">
+                                    <h5 class="text-center my-5  d-none d-md-block searchColor">PREMIUM SEARCH PREFERENCES</h5>
+                                </div>
+                                <div class="col-12 d-md-none ms-3 searchColor">
+                                    <h4>Education & Profession</h4>
+                                </div>
+                                <div class="row mt-4  pt-1 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Education Category</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Education Category">
+                                    </div>
+                                </div>
+                                <div class="row mt-3 pt-2 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Education Type</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Education Type">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Job Category</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Job Category">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Job Type</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Job Type">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Job Location</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Job Location">
+                                    </div>
+                                </div>
+                                <div class="col-12 d-md-none ms-3 py-4 searchColor">
+                                    <h4>Appearance</h4>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5 d-none d-md-flex">
+                                    <div class="col-4">
+                                        <p>Mother Tongue</p>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <input class="form-control" type="text" placeholder="Malayalam">
+                                    </div>
+                                </div>
+                                <div class="row mt-xl-4 pt-1 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Physical Status</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Normal">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Physical Status">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Complexion</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Complexion">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Body Type</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Body Type">
+                                    </div>
+                                </div>
+                                <div class="col-12 d-md-none ms-3 pt-4 searchColor">
+                                    <h4>Other</h4>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5 d-none d-md-flex">
+                                    <div class="col-4">
+                                        <p>Eating Habits</p>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5 d-none d-md-flex">
+                                    <div class="col-4">
+                                        <p>Drinking</p>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5 d-none d-md-flex">
+                                    <div class="col-4">
+                                        <p>Smoking</p>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                </div>
+                                <div class="row  mt-4 pt-1 me-xl-5 ">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Mother Tongue</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Malayalam">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Mother Tongue">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Star</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Star">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Chovva Dosham</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Chovva Dosham">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Jathakam</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Jathakam">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Monthly Income INR</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Monthly Income INR">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 pt-3 me-xl-5">
+                                    <div class="col-4 d-none d-md-flex">
+                                        <p>Financial Status</p>
+                                    </div>
+                                    <div class="col-8 d-none d-md-flex">
+                                        <input class="form-control" type="text" placeholder="Any">
+                                    </div>
+                                    <div class="col-12 d-md-none">
+                                        <input class="form-control" type="text" placeholder="Financial Status">
+                                    </div>
+                                </div>
+                                <div class="row mt-5 d-none d-md-flex">
+                                    <div class="col-12">
+                                        <p>Show Profile</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input searchPageCheck" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            Show With Photo
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-5 d-none d-md-flex">
+                                    <div class="col-12">
+                                        <p>Don't Show</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input searchPageCheck" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            Already Visited
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input searchPageCheck" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            Already Contacted
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-5 searchBg me-lg-0 me-xl-5 d-none d-md-flex">
+                                    <div class="col-12">
+                                        <p>Sort By</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input searchPageCheck" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            Recent Login
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input searchPageCheck" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Recent Registration
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input searchPageCheck" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Enable Save Search
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row m-3 py-5 d-none d-md-flex">
+                                    <div class="col-xl-6 col-lg-6  text-end">
+                                        <button class=" searchBtn px-4 me-1 pb-1 ps-2 px-4 py-1 mt-3 "><i class="ri-search-line searchPageIcon px-3"></i>Search</button>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6  text-start">
+                                        <button class=" searchBtn  px-4 py-1 pb-1 ps-2 ms-1 mt-3"><i class="ri-save-3-line searchPageIcon px-3"></i>Save</button>
+                                    </div>
+                                </div>
+                                <div class="row d-md-none ps-1 mt-3">
+                                    <div class="col-6 ">
+                                        <div class="form-check">
+                                            <input class="form-check-input  searchPageCheck" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label searchLabel" for="flexCheckDefault">
+                                                Show With Photo
+                                                </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 ">
+                                        <div class="form-check">
+                                            <input class="form-check-input searchPageCheck" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label searchLabel" for="flexCheckDefault">
+                                                Recent Registration
+                                                </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 d-md-none text-center p-4">
+                                    <button class=" searchBtn  me-3 px-5 pb-2 py-1 mt-3 mb-3"><i class="ri-search-line searchPageIcon "></i>   Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

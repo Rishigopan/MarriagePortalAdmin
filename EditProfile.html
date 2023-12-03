@@ -1,0 +1,1857 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Laptop Profile And Edit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Courgette&family=El+Messiri&family=Mate+SC&family=Oregano&family=Playball&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amita&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?ver=1.5">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+    <style>
+        /* --------  Laptop Profile View And Edit Start-------- */
+        
+        .profileEditMain {
+            background-color: #00ccfd;
+            text-align: center;
+            min-height: 10px !important;
+        }
+        
+        .profileEditfirst {
+            border-radius: 10px 0 0 10px;
+            background-color: #00ccfd;
+            text-align: center;
+            min-height: 10px !important;
+        }
+        
+        .profileEditlast {
+            background-color: #00ccfd;
+            text-align: center;
+            min-height: 10px !important;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        @media screen and (max-width:991px) {
+            .profileEditfirst {
+                border-radius: 10px;
+            }
+            .profileEditlast {
+                border-radius: 10px;
+            }
+        }
+        
+        .editContent {
+            font-size: 20px;
+            border-right: 2px solid black;
+        }
+        
+        .lastEditContent {
+            font-size: 20px;
+        }
+        
+        .editHeading {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #078bd7;
+            font-size: 20px;
+        }
+        
+        .packagedetails {
+            background-color: rgb(215, 214, 211);
+            border-color: rgb(215, 214, 211);
+        }
+        
+        .editPage {
+            border: 1px solid rgb(244, 243, 243);
+            border-radius: 10px;
+            padding: 0;
+        }
+        
+        @media screen and (max-width:991px) {
+            .profileEditMain {
+                background-color: #00ccfd;
+                border-radius: 10px;
+                text-align: center;
+                min-height: 10px !important;
+            }
+            .editContent {
+                font-size: 20px;
+                border-right: none;
+            }
+        }
+        
+        .preferenceEditPage {
+            border: 1px solid rgb(244, 243, 243) !important;
+            border-radius: 10px !important;
+            color: rgb(241, 20, 152) !important;
+            background-color: #fee7f8 !important;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .editBg {
+            background-color: #fee7f8;
+        }
+        
+        .selectBorder {
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+        }
+        
+        .selectBdr {
+            padding: 0%;
+            margin: 3%;
+            border-radius: 10px;
+            border-color: #06b7fb;
+        }
+        
+        @media screen and (max-width:480px) {
+            .editHeading {
+                font-size: medium;
+                margin-top: 15px;
+            }
+        }
+        
+        .btnlightgreen {
+            border-radius: 6px;
+            padding: 2px 12px;
+            background-color: #08f03e;
+            box-shadow: -2px 2px 2px rgb(155, 155, 155);
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-family: "Averia Serif Libre";
+            margin-right: 0;
+        }
+        
+        .form-select {
+            /* background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"); */
+            background-image: url("../IMAGES/DownArrow.png");
+        }
+        /* --------  Laptop Profile View And Edit End-------- */
+    </style>
+</head>
+
+<body>
+
+    <!-------- Header start-------->
+    <nav class="navbar navbar-expand-lg navBg">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link headLink pe-3" aria-current="page" href="#">REGISTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headLink px-3" href="#">PROFILE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headLink px-3" href="#">PACKAGE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headLink px-3" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headLink px-3" href="#">ASSIST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headlastLink ps-3" href="#">FILTER</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-------- Header end-------->
+
+    <div class="container-fluid px-3 ">
+        <div class="row mt-3">
+            <div class="col-xl-4 col-lg-4 col-12 ps-4 ">
+
+                <div class="row ">
+                    <div class="col-6 col-xl-6">
+                        <h4 class="editHeading ps-2">BASIC DETAILS</h4>
+                    </div>
+                    <div class="col-6 text-end pe-0">
+                        <button class="btnLightblue p-0 px-2 mb-2"><i class="ri-edit-box-line p-0"></i>&nbsp;&nbsp; Edit</button>
+                    </div>
+                </div>
+
+
+                <div class="row editPage packagedetails">
+                    <div class="col-6 ">
+                        <p class="mb-0 py-1">Package</p>
+                    </div>
+                    <div class="col-6 ">
+                        <p class="mb-0 py-1">Gold Plus-2500</p>
+                    </div>
+                </div>
+
+                <div class="row editPage packagedetails">
+                    <div class="col-6 ">
+                        <p class="mb-0 py-1">Create Date</p>
+                    </div>
+                    <div class="col-6 ">
+                        <p class="mb-0 py-1">30-10-2021</p>
+                    </div>
+                </div>
+
+
+                <div class="row editPage packagedetails">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Last Log Date</p>
+                    </div>
+                    <div class="col-6">
+                        <p class="mb-0 py-1">30-4-2022</p>
+                    </div>
+                </div>
+
+
+                <div class="row editPage packagedetails">
+                    <div class="col-6 ">
+                        <p class="mb-0 py-1">Expiry Date</p>
+                    </div>
+                    <div class="col-6 ">
+                        <p class="mb-0 py-1">30-10-2022</p>
+                    </div>
+                </div>
+
+                <div class="row editPage ">
+                    <div class="col-6 ">
+                        <p class="mb-0 py-1">Profile ID</p>
+                    </div>
+                    <div class="col-6 ">
+                        <input class="form-control selectBorder" id="" name="" type="text" placeholder="EMK12938">
+                    </div>
+                </div>
+
+                <div class="row editPage ">
+                    <div class="col-6 ">
+                        <p class="mb-0 py-1">Bride Name</p>
+                    </div>
+                    <div class="col-6 ">
+                        <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Gender</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option value="Male"> Male</option>
+                                    <option value="Female"> Female</option>
+                                    <option value="Others"> Others</option>
+                                </select>
+                    </div>
+                </div>
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Age & Date of Birth</p>
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control selectBorder" id="" name="" type="date" placeholder="EMK12938">
+                    </div>
+                </div>
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Profile Created by</p>
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Height</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option value="120">120 cm - 3 Ft 11 in</option>
+                                    <option value="121">121 cm - 3 Ft 12 In</option>
+                                    <option value="122">122 cm - 4 Ft</option>
+                                    <option value="123">123 cm - 4 Ft</option>
+                                    <option value="124">124 cm - 4 Ft 1 In</option>
+                                    <option value="125">125 cm - 4 Ft 1 In</option>
+                                    <option value="126">126 cm - 4 Ft 2 In</option>
+                                    <option value="127">127 cm - 4 Ft 2 In</option>
+                                    <option value="128">128 cm - 4 Ft 2 In</option>
+                                    <option value="129">129 cm - 4 Ft 3 In</option>
+                                    <option value="130">130 cm - 4 Ft 3 In</option>
+                                    <option value="131">131 cm - 4 Ft 4 In</option>
+                                    <option value="132">132 cm - 4 Ft 4 In</option>
+                                    <option value="133">133 cm - 4 Ft 4 In</option>
+                                    <option value="134">134 cm - 4 Ft 5 in</option>
+                                    <option value="135">135 cm - 4 Ft 5 In</option>
+                                    <option value="136">136 cm - 4 Ft 6 In</option>
+                                    <option value="137">137 cm - 4 Ft 6 In</option>
+                                    <option value="138">138 cm - 4 Ft 6 In</option>
+                                    <option value="139">139 cm - 4 Ft 7 In</option>
+                                    <option value="140">140 cm - 4 Ft 7 In</option>
+                                    <option value="141">141 cm - 4 Ft 8 In</option>
+                                    <option value="142">142 cm - 4 Ft 8 In</option>
+                                    <option value="143">143 cm - 4 Ft 8 In</option>
+                                    <option value="144">144 cm - 4 Ft 9 In</option>
+                                    <option value="145">145 cm - 4 Ft 9 In</option>
+                                    <option value="146">146 cm - 4 Ft 9 In</option>
+                                    <option value="147">147 cm - 4 Ft 10 In</option>
+                                    <option value="148">148 cm - 4 Ft 10 In</option>
+                                    <option value="149">149 cm - 4 Ft 11 In</option>
+                                    <option value="150">150 cm - 4 Ft 11 In</option>
+                                    <option value="151">151 cm - 4 Ft 11 In</option>
+                                    <option value="152">152 cm - 5 Ft</option>
+                                    <option value="153">153 cm - 5 Ft</option>
+                                    <option value="154">154 cm - 5 Ft 1 In</option>
+                                    <option value="155">155 cm - 5 Ft 1 In</option>
+                                    <option value="156">156 cm - 5 Ft 1 In</option>
+                                    <option value="157">157 cm - 5 Ft 2 in</option>
+                                    <option value="158">158 cm - 5 Ft 2 In</option>
+                                    <option value="159">159 cm - 5 Ft 3 In</option>
+                                    <option value="160">160 cm - 5 Ft 3 In</option>
+                                    <option value="161">161 cm - 5 Ft 3 In</option>
+                                    <option value="162">162 cm - 5 Ft 4 In</option>
+                                    <option value="163">163 cm - 5 Ft 4 In</option>
+                                    <option value="164">164 cm - 5 Ft 5 In</option>
+                                    <option value="165">165 cm - 5 Ft 5 In</option>
+                                    <option value="166">166 cm - 5 Ft 5 In</option>
+                                    <option value="167">167 cm - 5 Ft 6 In</option>
+                                    <option value="168">168 cm - 5 Ft 6 In</option>
+                                    <option value="169">169 cm - 5 Ft 7 In</option>
+                                    <option value="170">170 cm - 5 Ft 7 In</option>
+                                    <option value="171">171 cm - 5 Ft 7 In</option>
+                                    <option value="172">172 cm - 5 Ft 8 In</option>
+                                    <option value="173">173 cm - 5 Ft 8 In</option>
+                                    <option value="174">174 cm - 5 Ft 9 In</option>
+                                    <option value="175">175 cm - 5 Ft 9 In</option>
+                                    <option value="176">176 cm - 5 Ft 9 In</option>
+                                    <option value="177">177 cm - 5 Ft 10 In</option>
+                                    <option value="178">178 cm - 5 Ft 10 In</option>
+                                    <option value="179">179 cm - 5 Ft 10 In</option>
+                                    <option value="180">180 cm - 5 Ft 11 In</option>
+                                    <option value="181">181 cm - 5 Ft 11 In</option>
+                                    <option value="182">182 cm - 6 Ft</option>
+                                    <option value="183">183 cm - 6 Ft</option>
+                                    <option value="184">184 cm - 6 Ft</option>
+                                    <option value="185">185 cm - 6 Ft 1 In</option>
+                                    <option value="186">186 cm - 6 Ft 1 In</option>
+                                    <option value="187">187 cm - 6 Ft 2 In</option>
+                                    <option value="188">188 cm - 6 Ft 2 In</option>
+                                    <option value="189">189 cm - 6 Ft 2 In</option>
+                                    <option value="190">190 cm - 6 Ft 3 In</option>
+                                    <option value="191">191 cm - 6 Ft 3 In</option>
+                                    <option value="192">192 cm - 6 Ft 4 In</option>
+                                    <option value="193">193 cm - 6 Ft 4 In</option>
+                                    <option value="194">194 cm - 6 Ft 4 In</option>
+                                    <option value="195">195 cm - 6 Ft 5 In</option>
+                                    <option value="196">196 cm - 6 Ft 5 In</option>
+                                    <option value="197">197 cm - 6 Ft 6 In</option>
+                                    <option value="198">198 cm - 6 Ft 6 in</option>
+                                    <option value="199">199 cm - 6 Ft 6 In</option>
+                                    <option value="200">200 cm - 6 Ft 7 In</option>
+                                    <option value="201">201 cm - 6 Ft 7 In</option>
+                                    <option value="202">202 cm - 6 Ft 8 In</option>
+                                    <option value="203">203 cm - 6 Ft 8 In</option>
+                                    <option value="204">204 cm - 6 Ft 8 In</option>
+                                    <option value="205">205 cm - 6 Ft 9 In</option>
+                                    <option value="206">206 cm - 6 Ft 9 In</option>
+                                    <option value="207">207 cm - 6 Ft 9 In</option>
+                                    <option value="208">208 cm - 6 Ft 10 In</option>
+                                    <option value="209">209 cm - 6 Ft 10 In</option>
+                                    <option value="210">210 cm - 6 Ft 11 in</option>
+                                    <option value="211">211 cm - 6 Ft 11 In</option>
+                                    <option value="212">212 cm - 6 Ft 11 In</option>
+                                </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Weight</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option value="'40'">40</option>
+                                    <option value="'41'">41</option> 
+                                    <option value="'42'">42</option>
+                                    <option value="'43'">43</option>
+                                    <option value="'44'">44</option>
+                                    <option value="'45'">45</option>
+                                    <option value="'46'">46</option>
+                                    <option value="'47'">47</option>
+                                    <option value="'48'">48</option>
+                                    <option value="'49'">49</option>
+                                    <option value="'50'">50</option>
+                                    <option value="'51'">51</option>
+                                    <option value="'52'">52</option>
+                                    <option value="'53'">53</option>
+                                    <option value="'54'">54</option>
+                                    <option value="'55'">55</option>
+                                    <option value="'56'">56</option>
+                                    <option value="'57'">57</option>
+                                    <option value="'58'">58</option>
+                                    <option value="'59'">59</option>
+                                    <option value="'60'">60</option>
+                                    <option value="'61'">61</option>
+                                    <option value="'62'">62</option>
+                                    <option value="'63'">63</option>
+                                    <option value="'64'">64</option>
+                                    <option value="'65'">65</option>
+                                    <option value="'66'">66</option>
+                                    <option value="'67'">67</option>
+                                    <option value="'68'">68</option>
+                                    <option value="'69'">69</option>
+                                    <option value="'70'">70</option>
+                                    <option value="'71'">71</option>
+                                    <option value="'72'">72</option>
+                                    <option value="'73'">73</option>
+                                    <option value="'74'">74</option>
+                                    <option value="'75'">75</option>
+                                    <option value="'76'">76</option>
+                                    <option value="'77'">77</option>
+                                    <option value="'78'">78</option>
+                                    <option value="'79'">79</option>
+                                    <option value="'80'">80</option>
+                                    <option value="'81'">81</option>
+                                    <option value="'82'">82</option>
+                                    <option value="'83'">83</option>
+                                    <option value="'84'">84</option>
+                                    <option value="'85'">85</option>
+                                    <option value="'86'">86</option>
+                                    <option value="'87'">87</option>
+                                    <option value="'88'">88</option>
+                                    <option value="'89'">89</option>
+                                    <option value="'90'">90</option>
+                                    <option value="'91'">91</option>
+                                    <option value="'92'">92</option>
+                                    <option value="'93'">93</option>
+                                    <option value="'94'">94</option>
+                                    <option value="'95'">95</option>
+                                    <option value="'96'">96</option>
+                                    <option value="'97'">97</option>
+                                    <option value="'98'">98</option>
+                                    <option value="'99'">99</option>
+                                    <option value="'100'">100</option>
+                                </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Complexion</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option hidden value="">Complexion</option>
+                                    <option value="'Dark'">Dark</option>
+                                    <option value="'Fair'">Fair</option>
+                                    <option value="'Medium'">Medium</option>
+                                    <option value="'Very Fair'">Very Fair</option>
+                                    <option value="'Wheatish'">Wheatish</option>                              </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Body Type</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option hidden value="">Body</option>
+                                    <option value="'Slim'">Slim</option>
+                                    <option value="'Average'">Average</option>
+                                    <option value="'Athletic'">Athletic</option>
+                                    <option value="'Heavy'">Heavy</option>                              </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Matrial Status</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option disabled selected value="">Marital Status</option>
+                                    <option value="'Un Married'">Un Married</option>
+                                    <option value="'Divorced'">Divorced</option>
+                                    <option value="'Separated'">Separated</option>
+                                    <option value="'Widow/ Widower'">Widow/ Widower</option>
+                                    <option value="'Awaiting Divorce'">Awaiting Divorce</option>                              </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">No of Child</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option hidden value="">No of Child</option>
+                                    <option value="'0'">0</option>
+                                    <option value="'1'">1</option>
+                                    <option value="'2'">2</option>
+                                    <option value="'3'">3</option>
+                                    <option value="'4'">4</option>
+                                    <option value="'5'">5</option>                              </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Phys Status</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option hidden value="">Phys Status</option>
+                                    <option value="'Normal'">Normal</option>
+                                    <option value="'Blind'">Blind</option>
+                                    <option value="'Deaf/Dump'">Deaf/Dump</option>
+                                    <option value="'Handicapped'">Handicapped</option>
+                                    <option value="'Mentally Challenged'">Mentally Challenged</option>
+                                    <option value="'Physically Challenged'">Physically Challenged</option>
+                                    <option value="'With other Disability'">With other Disability</option>                              </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Native Place</p>
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Mother Tonque</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option >Maayalam</option>
+                                </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Blood Group</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option value="'A+'">A+</option>
+                                    <option value="'A-'">A-</option>
+                                    <option value="'B+'">B+</option>
+                                    <option value="'B-'">B-</option>
+                                    <option value="'O+'">O+</option>
+                                    <option value="'O-'">O-</option>
+                                    <option value="'AB+'">AB+</option>
+                                    <option value="'AB-'">AB-</option>
+                                </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Marriage Plan</p>
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 px-4">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-12 ">
+                        <h4 class="editHeading ps-4">RELIGIOUS DETAILS</h4>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Religion</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option value="'Christian'">Christian</option>
+                                        <option value="'Hindu'">Hindu</option>
+                                        <option value="'Muslim'">Muslim</option>
+                                        <option value="'Inter Religion'">Inter Religion</option>
+                                        <option value="'No Religion'">No Religion</option>
+                                        <option value="'Others'">Others</option>
+                                    </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Cast</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option > Viswakarma</option>
+                                    </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Sub Caste</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option > Viswakarma</option>
+                                    </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Caste No Bar</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option > Yes</option>
+                                    </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1"> Star</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option value="'Anizham'">Anizham</option>
+                                        <option value="'Aswathi'">Aswathi</option>
+                                        <option value="'Atham'">Atham</option>
+                                        <option value="'Avittam'">Avittam</option>
+                                        <option value="'Ayilyam'">Ayilyam</option>
+                                        <option value="'Bharani'">Bharani</option>
+                                        <option value="'Chadayam'">Chadayam</option>
+                                        <option value="'Chithira'">Chithira</option>
+                                        <option value="'Chothi'">Chothi</option>
+                                        <option value="'Karthika'">Karthika</option>
+                                        <option value="'Magam'">Magam</option>
+                                        <option value="'Makayiram'">Makayiram</option>
+                                        <option value="'Moolam'">Moolam</option>
+                                        <option value="'Pooradam'">Pooradam</option>
+                                        <option value="'Pooram'">Pooram</option>
+                                        <option value="'Pooruruttathi'">Pooruruttathi</option>
+                                        <option value="'Pooyam'">Pooyam</option>
+                                        <option value="'Punartham'">Punartham</option>
+                                        <option value="'Revathi'">Revathi</option>
+                                        <option value="'Rohini'">Rohini</option>
+                                        <option value="'Thiruvathira'">Thiruvathira</option>
+                                        <option value="'Thiruvonam'">Thiruvonam</option>
+                                        <option value="'Triketta'">Triketta</option>
+                                        <option value="'Uthradam'">Uthradam</option>
+                                        <option value="'Uthram'">Uthram</option>
+                                        <option value="'uthratathi'">uthratathi</option>
+                                        <option value="'Vishakan'">Vishakan</option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Chovva Dosham</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option value="'Yes'">Yes</option>
+                                        <option value="'No'">No</option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Type of Jathakam</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option  hidden value="">Type of Jathakam</option>
+                                        <option value="'Normal Jadhakam'">Normal Jadhakam</option>
+                                        <option value="'Sudha Jadhakam'">Sudha Jadhakam</option>
+                                        <option value="'Paapa Jadhakam'">Paapa Jadhakam</option>                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Parish/SNDP/NSS/Mahal</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-0 py-1"></p>
+                            </div>
+                        </div>
+
+                        <h4 class="editHeading ps-4">PROFESSION DETAILS</h4>
+
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Education Category</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option > </option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Education Type</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option > </option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Education Details</p>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Job Category</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option > </option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Job Type</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option > </option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Job Detail and Official Address </p>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Job Location Country</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option > </option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Job Location State</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option > </option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Job Location District</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option > </option>
+                                    </select>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Job Location City</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                        <option > </option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Monthly Income</p>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-12 ps-4">
+                        <h4 class="editHeading ps-4">FAMILY DETAILS</h4>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Father's Name</p>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Father's Education</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Father's Job</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Father's Job Details</p>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Mother's Name</p>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Mother's Education</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Mother's Job </p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Mother's Job Detail </p>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Married Brothers</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Married Sisters</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Unmarried Brothers</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Unmarried Sisters </p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Job Profile Of Sibling</p>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Guardian (If Any)</p>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Ancestral / Family Orgin</p>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Family Values</p>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Family Type </p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Financial Status</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option hidden value="">Financial Status</option>
+                                    <option value="'Middle class'">Middle class</option>
+                                    <option value="'Upper middle class'">Upper middle class</option>
+                                    <option value="'Lower class'">Lower class</option>                            </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Home Type</p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-6">
+                                <p class="mb-0 py-1">Candidates Share Details</p>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-12 px-4">
+                <h4 class="editHeading ps-4 my-3">LIFE STYLE</h4>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Eating Habits</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                <option value="'Eggetarian'">Eggetarian</option>
+                                <option value="'Non Veg'">Non Veg</option>
+                                <option value="'Veg'">Veg</option>
+                                <option value="'Occasionally Non - Veg'">Occasionally Non - Veg</option>
+                            </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Drinking Habits</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                <option value="'Daily'">Daily</option>
+                                <option value="'Never'">Never</option>
+                                <option value="'Occasionally'">Occasionally</option>
+                                </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Smoking Habits</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                <option value="'Daily'">Daily</option>
+                                <option value="'Never'">Never</option>
+                                <option value="'Occasionally'">Occasionally</option>                        
+                            </select>
+                    </div>
+                </div>
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Language Known</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                <option value="'Arabic'">Arabic</option>
+                                <option value="'English'">English</option>
+                                <option value="'French'">French</option>
+                                <option value="'Gujarati'">Gujarati</option>
+                                <option value="'Hindi'">Hindi</option>
+                                <option value="'Kannada'">Kannada</option>
+                                <option value="'Konkani'">Konkani</option>
+                                <option value="'Malayalam'">Malayalam</option>
+                                <option value="'Punjabi'">Punjabi</option>
+                                <option value="'Tamil'">Tamil</option>
+                                <option value="'Telugu'">Telugu</option>
+                                <option value="'Others'">Others</option>
+                                </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Hobbies</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                <option value="'Art and handicraft'">Art and handicraft</option>
+                                <option value="'Billiards'">Billiards</option>
+                                <option value="'Coin Collection'">Coin Collection</option>
+                                <option value="'Cricket'">Cricket</option>
+                                <option value="'Cycling'">Cycling</option>
+                                <option value="'Dancing'">Dancing</option>
+                                <option value="'Drawing and painting'">Drawing and painting</option>
+                                <option value="'Dress designing'">Dress designing</option>
+                                <option value="'Gardening'">Gardening</option>
+                                <option value="'Internet surfing'">Internet surfing</option>
+                                <option value="'Pool'">Pool</option>
+                                <option value="'Reading'">Reading</option>
+                                <option value="'Singing'">Singing</option>
+                                <option value="'Snooker'">Snooker</option>
+                                <option value="'Writing'">Writing</option>
+                                <option value="'Others'">Others</option>
+                                </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Interests</p>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                <option value="'Browsing internet'">Browsing internet</option>
+                                <option value="'Chess'">Chess</option>
+                                <option value="'Cooking'">Cooking</option>
+                                <option value="'Dance'">Dance</option>
+                                <option value="'Dancing'">Dancing</option>
+                                <option value="'Designing'">Designing</option>
+                                <option value="'Driving'">Driving</option>
+                                <option value="'Games and puzzles'">Games and puzzles</option>
+                                <option value="'Movies'">Movies</option>
+                                <option value="'Music'">Music</option>
+                                <option value="'Nature'">Nature</option>
+                                <option value="'Pets'">Pets</option>
+                                <option value="'Photography'">Photography</option>
+                                <option value="'Playing musical instruments'">Playing musical instruments</option>
+                                <option value="'Shopping'">Shopping</option>
+                                <option value="'Singing'">Singing</option>
+                                <option value="'Sports'">Sports</option>
+                                <option value="'Travelling'">Travelling</option>
+                                <option value="'Watching movies'">Watching movies</option>
+                                <option value="'Others'">Others</option>
+                            
+                            </select>
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Blog</p>
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                    </div>
+                </div>
+
+
+                <div class="row editPage">
+                    <div class="col-6">
+                        <p class="mb-0 py-1">Link Social Network</p>
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control selectBorder" id="" name="" type="text" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-12  ">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 class=" editHeading ps-4 my-3">LOCATION AND CONTACT DETAILS</h4>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-12 px-4">
+
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">Communication Address</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <textarea cols="30" rows="4" class="form-control selectBorder " id=" " name=" " placeholder="  "></textarea>
+                                <!-- <input type="textarea" row="3" class="selectBorder " value="Chirayil House, Karshaka Road, Near Church, 4th House " > -->
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">Permanent Address Country</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">State</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">District</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">City</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">Residential Status</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <select class="form-select  selectBorder" id="" name="" aria-label="Default select example">
+                                    <option > </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-12 px-4">
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">Whatsapp</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class=" form-control  selectBorder" id="" name="" value=" ">
+                            </div>
+                        </div>
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">Residence Phone Number</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class=" form-control selectBorder" id="" name="" value=" ">
+                            </div>
+                        </div>
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">Preferred Contact Number</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class=" form-control selectBorder" id="" name="" value=" ">
+                            </div>
+                        </div>
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">Contact Person Name</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class=" form-control selectBorder" id="" name="" value=" ">
+                            </div>
+                        </div>
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">Releationship with Candidate</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class=" form-control  selectBorder" id="" name="" value=" ">
+                            </div>
+                        </div>
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">Preferred Time to Call</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control selectBorder" id="" name="" value=" ">
+                            </div>
+                        </div>
+                        <div class="row editPage">
+                            <div class="col-lg-6">
+                                <p class="mb-0 py-1">Email</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control selectBorder" id="" name="" value=" ">
+                            </div>
+                        </div>
+                        <div class="row editPage">
+                            <div class="col-lg-6 py-1">
+                                <p class="mb-0 py-1"> </p>
+                            </div>
+                            <div class="col-lg-6 py-1">
+                                <input type="text" class="form-control selectBorder" id="" name="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-md-none ">
+            <div class="col-lg-4 col-xl-4 col-12">
+                <h4 class="editHeading ps-4 text-center text-lg-start">HOROSCOPE DETAILS</h4>
+                <div class="row">
+                    <div class="col-12">
+                        <label>Time Of Birth</label>
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control" type="text" id="" name="" placeholder="Hour">
+                    </div>
+                    <div class="col-6">
+                        <input class="form-control" type="text" id="" name="" placeholder="Minute">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <label>Date Of Birth</label>
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="" name="" placeholder="Day">
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="" name="" placeholder="Month">
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="" name="" placeholder="Year">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label>Place Of Birth</label>
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="" name="" placeholder="Country">
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="" name="" placeholder="Region">
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="" name="" placeholder="Place">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-1">
+                        <label>Janma Sista Dasa Details</label>
+                    </div>
+                    <div class="col-lg-3 col-6 mt-2">
+                        <input class="form-control" type="text" id="" name="" placeholder="Janma Sista Dasa">
+                    </div>
+                    <div class="col-lg-3 col-6 mt-2">
+                        <input class="form-control" type="text" id="" name="" placeholder="End Day">
+                    </div>
+                    <div class="col-lg-3 col-6 mt-2">
+                        <input class="form-control" type="text" id="" name="" placeholder="End Month">
+                    </div>
+                    <div class="col-lg-3 col-6 mt-2">
+                        <input class="form-control" type="text" id="" name="" placeholder="End Year">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-xl-2 col-lg-2 col-12 text-center">
+                        <label class="mb-3">Upload Horoscope</label>
+                        <button class="btnUpload mb-3">UPLOAD</button> <br>
+                        <label>Horo.jpg</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row mt-2">
+            <div class="col-12 d-none d-md-block mt-2">
+                <h4 class="editHeading ps-4  text-center text-lg-start">HOROSCOPE DETAILS</h4>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-12 ps-4 ">
+                <div class="col-12 d-none d-md-block ">
+                    <div class="row">
+                        <div class="col-12">
+                            <label>Time Of Birth</label>
+                        </div>
+                        <div class="col-6">
+                            <input class="form-control" type="text" id="" name="" placeholder="Hour">
+                        </div>
+                        <div class="col-6">
+                            <input class="form-control" type="text" id="" name="" placeholder="Minute">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label>Date Of Birth</label>
+                        </div>
+                        <div class="col-4">
+                            <input class="form-control" type="text" id="" name="" placeholder="Day">
+                        </div>
+                        <div class="col-4">
+                            <input class="form-control" type="text" id="" name="" placeholder="Month">
+                        </div>
+                        <div class="col-4">
+                            <input class="form-control" type="text" id="" name="" placeholder="Year">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-6 d-none d-md-block">
+                <div class="row">
+                    <div class="col-12">
+                        <label>Place Of Birth</label>
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="" name="" placeholder="Country">
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="" name="" placeholder="Region">
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" id="" name="" placeholder="Place">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-1">
+                        <label>Janma Sista Dasa Details</label>
+                    </div>
+                    <div class="col-lg-3 col-6 mt-2">
+                        <input class="form-control" type="text" id="" name="" placeholder="Janma Sista Dasa">
+                    </div>
+                    <div class="col-lg-3 col-6 mt-2">
+                        <input class="form-control" type="text" id="" name="" placeholder="End Day">
+                    </div>
+                    <div class="col-lg-3 col-6 mt-2">
+                        <input class="form-control" type="text" id="" name="" placeholder="End Month">
+                    </div>
+                    <div class="col-lg-3 col-6 mt-2">
+                        <input class="form-control" type="text" id="" name="" placeholder="End Year">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-2 col-12 text-center d-none d-md-block">
+                <label class="mb-3">Upload Horoscope</label>
+                <button class="btnUpload mb-3">UPLOAD</button> <br>
+                <label>Horo.jpg</label>
+            </div>
+        </div>
+
+
+
+
+        <div class="row mt-2">
+            <div class="col-xl-6 col-12">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-12 my-3">
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                    </div>
+                    <div class="col-xl-8 col-lg-6 col-12">
+                        <div class="row mx-5 my-3">
+                            <div class="col-3 horoscopeBox">12</div>
+                            <div class="col-3 horoscopeBox border-start-0">1</div>
+                            <div class="col-3 horoscopeBox border-start-0 border-end-0">2</div>
+                            <div class="col-3 horoscopeBox">3</div>
+                            <div class="col-3 horoscopeBox border-top-0">11</div>
+                            <div class="col-3"></div>
+                            <div class="col-3"></div>
+                            <div class="col-3 horoscopeBox border-top-0">4</div>
+                            <div class="col-3 horoscopeBox border-top-0 border-bottom-0">10</div>
+                            <div class="col-3"></div>
+                            <div class="col-3"></div>
+                            <div class="col-3 horoscopeBox border-top-0 border-bottom-0">5</div>
+                            <div class="col-3 horoscopeBox">9</div>
+                            <div class="col-3 horoscopeBox border-start-0">8</div>
+                            <div class="col-3 horoscopeBox border-start-0 border-end-0">7</div>
+                            <div class="col-3 horoscopeBox">6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xl-6 col-12">
+                <div class="row">
+                    <div class="  col-xl-4 col-lg-6 col-12 my-3">
+                        <select class=" form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                        <select class="form-select selectBdr" aria-label="Default select example">
+                                    <option >Select</option>
+                                </select>
+                    </div>
+                    <div class="col-xl-8 col-lg-6 col-12">
+                        <div class="row mx-5 my-3">
+                            <div class="col-3 horoscopeBox">12</div>
+                            <div class="col-3 horoscopeBox border-start-0">1</div>
+                            <div class="col-3 horoscopeBox border-start-0 border-end-0">2</div>
+                            <div class="col-3 horoscopeBox">3</div>
+                            <div class="col-3 horoscopeBox border-top-0">11</div>
+                            <div class="col-3"></div>
+                            <div class="col-3"></div>
+                            <div class="col-3 horoscopeBox border-top-0">4</div>
+                            <div class="col-3 horoscopeBox border-top-0 border-bottom-0">10</div>
+                            <div class="col-3"></div>
+                            <div class="col-3"></div>
+                            <div class="col-3 horoscopeBox border-top-0 border-bottom-0">5</div>
+                            <div class="col-3 horoscopeBox">9</div>
+                            <div class="col-3 horoscopeBox border-start-0">8</div>
+                            <div class="col-3 horoscopeBox border-start-0 border-end-0">7</div>
+                            <div class="col-3 horoscopeBox">6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 preferenceEditPage">
+            <div class="col-12">
+                <p class="mb-0 py-1">PARTNER PREFERENCE</p>
+            </div>
+        </div>
+        <div class="row editBg mt-4">
+            <div class="col-12 col-xl-6 col-lg-6">
+                <div class="row editPage">
+                    <div class="col-4">
+                        <p class="mb-0 py-1">Age </p>
+                    </div>
+                    <div class="col-4">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                    <option >From</option>
+                                </select>
+                    </div>
+                    <div class="col-4">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                    <option >to</option>
+                                </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-4">
+                        <p class="mb-0 py-1">Height </p>
+                    </div>
+                    <div class="col-4">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                    <option >From</option>
+                                </select>
+                    </div>
+                    <div class="col-4">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                    <option >to</option>
+                                </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Complexion</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                    <option ></option>
+                                </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Body Type</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                    <option ></option>
+                                </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Marital Status</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                    <option >Never Married</option>
+                                </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Religion</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                    <option ></option>
+                                </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Caste</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                    <option ></option>
+                                </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Caste No Bar</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                    <option ></option>
+                                </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Type of Jathakam</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                    <option ></option>
+                                </select>
+                    </div>
+                </div>
+                <div class="row preferenceEditPage">
+                    <div class="col-12">
+                        <p class="mb-0 py-1">I am Looking For</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-12 col-xl-6 col-lg-6">
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Matching Stars</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                <option >Revathi</option>
+                                <option >Uthradam</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Education Category</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                <option >Bachelor</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Education Type</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                <option >B.Com</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Job Category</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                <option >private Company</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Job Type</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                <option >Field Executive</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">Country</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                <option >India</option>
+                                <option >USA</option>
+                                <option >UK</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">State</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                <option >Kerala</option>
+                                <option >Tamilnadu</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">District</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                <option >Ernakulam</option>
+                                <option >Thrissur</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="col-7">
+                        <p class="mb-0 py-1">City</p>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select editBg selectBorder" aria-label="Default select example">
+                                <option >Aluva</option>
+                                <option >Ankamaly</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="row editPage">
+                    <div class="row my-2 ">
+                        <div class="col-xl-6 col-lg-6 col-6  text-end">
+                            <button class="btnLightblue  me-3 px-5 py-1 ">Edit</button>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-6  text-start">
+                            <button class="btnlightgreen  px-5 py-1 ms-3 ">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-6  text-start mb-4 mt-4">
+                <button class="btnLightblue  me-3 px-4 py-1 ">+Add Photo</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-lg-6 col-12 mb-5">
+                <img src="../IMAGES/custProfileEditImg.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-lg-6 col-12">
+                <img src="../IMAGES/custProfileEditImg.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-lg-6 col-12">
+                <img src="../IMAGES/custProfileEditImg.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-lg-6 col-12">
+                <img src="../IMAGES/custProfileEditImg.png" alt="" class="img-fluid">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Laptop Service Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Courgette&family=El+Messiri&family=Mate+SC&family=Oregano&family=Playball&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amita&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?ver=1.5">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+</head>
+
+<body class="servicePageBg">
+
+    <div class="container-fluid headBg d-md-block">
+
+        <!-------- Header start -------->
+        <div class="row">
+            <div class="col-12">
+                <div class="my-2 d-flex">
+                    <nav class="navbar navbar-expand-lg p-0 ms-auto me-auto headMobileBg d-none d-md-flex">
+                        <div class="container-fluid p-0">
+                            <a class="navbar-brand d-none d-md-flex loginStyle" href="#">
+                                <div class="logoBg">
+                                    <div class="d-flex mx-3 d-none d-md-flex">
+                                        <div class="">
+                                            <img src="../IMAGES/marriageLogo.jpg" style="width:40px; height:40px;" alt="" class="mt-1">
+                                        </div>
+                                        <h1 class="mainHead mt-2">Malayali <span class="marriageHead">Marriage</span></h1>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="navbar-toggler mt-2 text-white d-none d-md-flex d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class=" text-white navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">
+                                            <span class="headOptions">HOME</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">SEARCH</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">MATCHES</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">INBOX</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">CHAT</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">SERVICE</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">PAYMENT</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headlastOption">CONTACT US</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="ms-auto">
+                            <div class="d-none d-lg-flex justify-space-around">
+                                <!-- <button class="btn login rounded-pill">Login</button> -->
+                                <i class="material-icons iconBell ms-4">
+                                    notifications
+                                </i>
+                                <img src="../IMAGES/avatarImg.png" alt="" class="avatarImg ms-4">
+                                <i class="ri-menu-line iconMenu ms-4"></i>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-------- Header end-------->
+
+        <!-------- MobileView Head start -------->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary headMobileBg mt-2 d-md-none">
+            <div class="container-fluid px-0">
+                <a href="" class=""><i class="material-icons iconBell">
+                    notifications
+                </i></a>
+                <div class="d-flex">
+                    <img src="../IMAGES/marriageLogo.jpg" style="width:20px; height:20px;" alt="" class="mt-2">
+                    <h6 class="mainHead text-white mt-1">Malayali <span class="marriageHead text-white">Marriage</span></h6>
+                </div>
+                <button class="mobileSearchIcon mt-1 mb-2"><i class="ri-search-line"></i></button>
+            </div>
+        </nav>
+        <!-------- MobileView Head end -------->
+
+    </div>
+
+
+    <!-------- Laptop Services main start -------->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 mb-3">
+                <h4 class="fw-bold">OUR SERVICES</h4>
+            </div>
+            <div class="col-12">
+                <p class="servicesPara">A wedding, in everysence, is the greatest event in a person's life. To make your wedding a memmorable and truly magnificent occassion we provide a complete planning service ranging from weddding decor to catering and more. Our team of
+                    planners, each having special skills set to manifest only the the best results, can provide you an overall planning experience which you can rely upon with confidence. Each and every aspect of wedding planning, right from selecting
+                    the venue to hiring the experts for bridal makeup, photography, entertainment and sound, desighning, decor etc:are persecuted with extreme precision and perfection. Our professional expertise and experience shall be evident in a every
+                    phase all along the way till the final day. Our sincere efforts will certainly help you to fulfill your dreams and save the cost as well.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-xl-3 col-lg-3 col-12 text-center">
+                <div class="servicePosition">
+                    <img src="./IMAGES/Services/wedding decor.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                    <div class="serviceheadPosition">
+                        <h6 class="servicesAbvPic py-2 px-5">WEDDING DECOR</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-12 text-center mb-sm-3">
+                <div class="servicePosition">
+                    <img src="./IMAGES/Services/bridal makeup.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                    <div class="serviceheadPosition">
+                        <h6 class="servicesAbvPic py-2 px-5">BRIDAL MAKEUP</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-12 text-center">
+                <div class="servicePosition">
+                    <img src="./IMAGES/Services/wedding dfress.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+
+                    <div class="serviceheadPosition">
+                        <h6 class="servicesAbvPic py-2 px-5">WEDDING DRESS</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-12 text-center">
+                <div class="servicePosition">
+                    <img src="./IMAGES/Services/wedding jewellery.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                    <div class="serviceheadPosition">
+                        <h6 class="servicesAbvPic py-2 px-5">WEDDING JEWELLERY</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-xl-3 col-lg-3 col-12 text-center">
+                    <div class="servicePosition">
+                        <img src="./IMAGES/Services/outdoor weeding.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                        <div class="serviceheadPosition">
+                            <h6 class="servicesAbvPic py-2 px-5"> THEME WEDDING </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-12 text-center">
+                    <div class="servicePosition">
+                        <img src="./IMAGES/Services/catering.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                        <div class="serviceheadPosition">
+                            <h6 class="servicesAbvPic py-2 px-5">CATERING</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-12 text-center">
+                    <div class="servicePosition">
+                        <img src="./IMAGES/Services/wedding venue.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+
+                        <div class="serviceheadPosition">
+                            <h6 class="servicesAbvPic py-2 px-5">VENUE SEARCH</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-12 text-center">
+                    <div class="servicePosition">
+                        <img src="./IMAGES/Services/vendor managemnet.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                        <div class="serviceheadPosition">
+                            <h6 class="servicesAbvPic py-2 px-5">VENDOR MANAGEMENT</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-xl-3 col-lg-3 col-12 text-center">
+                        <div class="servicePosition">
+                            <img src="./IMAGES/Services/hospitalilty management.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                            <div class="serviceheadPosition">
+                                <h6 class="servicesAbvPic py-2 px-5">HOSPITALITY MANAGEMENT</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-12 text-center">
+                        <div class="servicePosition">
+
+                            <div class="serviceheadPosition">
+                                <h6 class="servicesAbvPic py-2 px-5">WEDDING PHOTOGRAPHY</h6>
+                            </div> <img src="./IMAGES/Services/wedding photography.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-12 text-center">
+                        <div class="servicePosition">
+
+                            <img src="./IMAGES/Services/logistics managemnet.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+
+                            <div class="serviceheadPosition">
+                                <h6 class="servicesAbvPic py-2 px-5">LOGISTICS MANAGEMENT</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-12 text-center">
+                        <div class="servicePosition">
+                            <img src="./IMAGES/Services/invitation card.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                            <div class="serviceheadPosition">
+                                <h6 class="servicesAbvPic py-2 px-5">INVITATION CARD</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-xl-3 col-lg-3 col-12 text-center">
+                        <div class="servicePosition">
+                            <img src="./IMAGES/Services/mehandi.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                            <div class="serviceheadPosition">
+                                <h6 class="servicesAbvPic py-2 px-5">MEHANDI MARRIAGE</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-12 text-center">
+                        <div class="servicePosition">
+                            <img src="./IMAGES/Services/music and entertainments.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                            <div class="serviceheadPosition">
+                                <h6 class="servicesAbvPic py-2 px-5">MUSIC & ENTERTAINMENT</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-12 text-center">
+                        <div class="servicePosition">
+                            <img src="./IMAGES/Services/wedding gift.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                            <div class="serviceheadPosition">
+                                <h6 class="servicesAbvPic py-2 px-5">WEDDING GIFT</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-12 text-center">
+                        <div class="servicePosition">
+                            <img src="./IMAGES/Services/honey moon.jpg" alt="" style="width:300px; height:235px;" class="mrgServicesImg img-fluid">
+                            <div class="serviceheadPosition">
+                                <h6 class="servicesAbvPic py-2 px-5">HONEYMOON</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesWhiteBg py-3 mt-5">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Wedding Decor</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-2 ps-xl-4">How you want your wedding to be?. Each client is unique and has a different taste. Our expertise can distinquish your wishes as to the decor desighning and can excecute the same effectively considering the budget and other
+                                requirements. We just focus on what you need your dream event to be like and our team of design experts will make it a reality. First of all you will be given a perfect picture of how each function would look like by presenting
+                                reference images, drawings and 3d desighning. Everything from kalyana mandapam,entrance pathway, lounges,seating, table treatments, chair decor, music floor, lighting effects, ambience props etc: would be custom desighned
+                                as per your style and taste.</p>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/wedding decor.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg">
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Bridal Makeup</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/bridal makeup.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg ms-xl-4">
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-3 ps-xl-4">To complete an overall wedding look, a beautiful bridal makeup is certainly essencial. Since India has many cultures and each one is unique in itself, the Indian weddings as well vary in styles and forms. For instance, the
+                                Bengali bridal makeup with bold kohl eyes very distingtive from the South Indian elegant classy makeup. We have got pictures of the latest trends of indian bridal makeup. Once you selected the suitable image as per your
+                                style and culture, our expert makeup artists can perform an exquisite Indian bridal makeup.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Wedding Dress</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-2 ps-xl-4">Apart from any other thing, a bride dreams about most is the wedding dress. But finding the perfect wedding dress is not an easy task. And the Indian weddings are an extravagant affair. Before selecting the best bridal wedding
+                                outfit which must suit the personal style, it is needed to consider many wedding dress ideas. We have got an extensive and amazing wedding outfit photo gallery which will help you to choose the best and the latest. You
+                                can take it as an ultimate guide to find your suitable wedding dress which is to make you the most beautiful bride.</p>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/wedding dfress.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg">
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Wedding Jewellery</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/wedding jewellery.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg ms-xl-4">
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-3 ps-xl-4">To complete the whole bridal look appearance, wedding jewellery is very important. The proper bridal jewellery can elevate the overall bridal look elegantly. But selecting the right jewellery set for wedding, to match with
+                                the stylish bridal outfit is not an easy affair. Our Specially curated wedding jewellery photo gallery is meant to help out all the brides to have a lot of ideas about the latest Indian bridal jewellery trends. Presented
+                                here is an array of fineries ranging from gold jewellery sets to the glittering diamond or pearl ornaments. Be it trendy or traditional, our collection covers all the designs including the bridal jewellery accessories as
+                                well.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Theme Wedding</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-2 ps-xl-4">Wedding is a story of two souls to be entwined in love forever. And it relates the stories of two families and many personalities becoming one in a magnificient celebration. Since we are brilliant in translating such stories
+                                to reality, we aim to create a wedding that represents your style and personality. When it comes to planning a perfect event, we provide our clients with the best assistance and advice. A wedding theme can make the event
+                                grander and bring more life into the festivities. A wedding theme can be chosen as per the heritage and culture, your life styles and ideas of aesthetics. We have an expert team of wedding designers with ideas to creat
+                                a unique theme for any occasion. The options are many. A vintage theme which brings a bygone era. A country theme with memories of a folktale. A theme centres at a beach to creat a colonial feel. The options are many. Our
+                                wedding team department can help you to find the most suited theme for your style and attitude.</p>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/outdoor weeding.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg mt-xl-3">
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Catering</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/catering.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg mt-xl-3 ms-xl-4">
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-3 ps-xl-4">The venue and ambience of your life's greatest event could be grand and beautiful. But if good food is not served, the party becomes some what barren. Food and drinks are very important and served as the integral parts of the
+                                Indian weddings. And when serving to different communities, the individual prefereces also defer. Our catering team is highly able to cater to any kind of expectations. South Indian, North Indian, Chinese, Mexican, Arabian,
+                                Continental etc: are arranged with superb care and perfection according to the need of the occasion and venue. Our catering services also include sourcing food structures, handling the menu, wedding cake design, menu design
+                                etc. Let your guests feel regally satisfied.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Venue Search</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-3 ps-xl-4">Finding the perfect venue can be overwhelming and time consuming. To save your time and effort we can source exceptional venues on your behalf. Be it a spot anywhere in kerala or outside, our venue search team will find it
+                                out according to your requirements and budget.</p>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/wedding venue.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg mt-xl-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Vendor Management</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/vendor managemnet.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg mt-xl-1 ms-xl-4">
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-4 ps-xl-4">A strong focus on vendor section and the management is an inevitable part of the wedding planning. We have an expensive list of top quality artists, musicians, dancers and other skilled personnel to make your wedding a magnificent
+                                event. You can be assured of the outputs since we have known well of the reliability and quality of the entertainers and technicians who have enlisted with us. All our vendors have been vetted for their perfomance which
+                                makes the entire process of hiring the vendors hassle free. While recomending them your budget and preferences will be taken into consideration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Hospitality and Guest Management</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-3 ps-xl-4">Weddings are all about people and guests. And planning a wedding can be very intricate and stressfull. But we can take care of your guest management requirements quite efectively. Initially the guests would be escorted to the
+                                venue personally. They would be well informed of each function and assisted if they need anything. You can enjoy with your loved ones on the special day because of our experienced team dedicated in guest management, hospitality
+                                and logistics.</p>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/hospitalilty management.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg mt-xl-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Wedding Photography</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/wedding photography.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg mt-xl-1 ms-xl-4">
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-4 ps-xl-4">A wedding event is not complete without having those memorable moments been captured in charming frames. You might have conceived your wedding photos but ignorant of how to make them real. We have an impressive list of wedding
+                                photographers capable to design the photoshoot according to your taste and style. These creative artists can deliver excellent frames and video footages from every occasion of your wedding event. Family and bridal portraits,
+                                regular and candid images, photo albums,CD/DVD production and short films are the highlights of our wedding photography package.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Logistics Management</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-3 ps-xl-4">Our logistic management service is a part of our complete wedding planning. Whatever be the choice of the commuting your guest make, by train or flight or car, we can asist in their easy travel management and we help also to
+                                save costs on group travells. We take care of room allocations, travell planning and bulk bookings. Your guests can enjoy our seemless logistics service from the moment they arrive at the airport or station. We will escort
+                                them to the wedding and have them sent home in the same efficient manner.</p>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/logistics managemnet.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg mt-xl-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Invitation card</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/invitation card.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg mt-xl-1 ms-xl-4">
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-4 ps-xl-4">Wedding invitations play a very important role in communicating your wedding details to others. You have seen many wedding invitations, but only some of them would be remembered. Why? Because of the creativity with respect
+                                to the design, content, and colours used. In Indian weddings, there are certain ways that elders follow with respect to wedding cards. For example, they insist on having specific content written in a certain style on the
+                                invitation card. However, the younger generation concentrates on getting the most creative wedding cards with innovative ways to invite the guests for the wedding.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Mehandi Marriage</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-3 ps-xl-4">Indian Wedding tradition calls for a Mehndi ceremony to be held the night before the wedding as a way of wishing the bride good health and prosperity as she makes her journey on to marriage. The Mehndi Ceremony is organized
+                                by the Bride's family bringing together the female components of each side. While Mehndi is mainly for females, male relatives are invited to join in on the party that comes after the Bride has completed her henna. The
+                                core significance of applying Mehndi is to utilize its natural medicinal herbal remedies, cooling the body and relieving the Bride of any stress before her big day. Henna is applied to both the hands and the feet as a means
+                                of cooling the nerve-endings of the body, preventing the nerves from tensing up.</p>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/mehandi.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg mt-xl-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Music and Entertainment</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/music and entertainments.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg mt-xl-1 ms-xl-4">
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-4 ps-xl-4">A wedding would not be an outstanding event without some fun and entertainment. To serve this purpose we can arrange anything such as Music and Dance Shows, wedding and religious song selection, fireworks and Laser show, stand-up
+                                comedy, light and sound shows, live bands, DJ parties etc:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Wedding Gifts</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-3 ps-xl-4">Wedding ceremony means the exchange of gifts. While your wedding guests plan the gift for you, you should plan it for them as well. From a simple showpiece to a grand jewellery, any gift will have a value in everyone's life.
+                                People talk about it, remember it, keep in their house, etc.. The smart way to buy return gifts for your wedding guests is to order in bulk. Once you know the approximate guest count, order the gifts in bulk to get maximum
+                                gifts. Order in such a way that even if there is some left, you can still use it for your own.
+                            </p>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="./IMAGES/Services/wedding gift.jpg" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg mt-xl-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesWhiteBg py-3 mt-2">
+                    <h6 class="ps-5 servicesMainHead fs-4 ms-4">Honeymoon</h6>
+                </div>
+                <div class="servicesWhiteBg py-4 px-5 mt-2">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-12">
+                            <img src="" alt="" style="width:370px; height:230px;" class="img-fluid mainServicesImg mt-xl-1 ms-xl-4">
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-12">
+                            <p class="servicesPara pt-xl-4 ps-xl-4">What is the first thing you do after the wedding? Go for your honeymoon ofcourse! After so much of hustle and bustle at your wedding, with all the stress of wedding planning, all you would want is some peaceful time with your
+                                partner. The honeymoon period is very crucial to you and your partner as this is the time you get to spend with each other. Especially in an arranged marriage, this is the time where you get to understand your partner.
+                                This is the transition time for you and your partner to move into a different lifestyle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-------- Laptop Services main end -------->
+
+
+            <!--------Footer Start-------->
+
+            <section class="footer d-none d-md-block">
+                <div class="container-fluid">
+                    <div class="row pt-5 pb-3 ms-5 ps-5">
+                        <h5 class="footerHead">Search By Profile ID</h5>
+                        <div class="col-xl-2 col-lg-4 col-12">
+                            <div class="" style="width: 14rem;">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control inputFooter" placeholder="Enter Profile ID" aria-label="profile id search">
+                                    <button class="input-group-text goBtn" id="basic-addon2">Go</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-4 col-12 ms-xl-5">
+                            <button class="btnFooter mb-3">* Go to Premium *</button>
+                        </div>
+                        <div class="col-xl-2 col-lg-4 col-12 ms-xl-4">
+                            <button class="btnFooter mb-3">* Online Chat *</button>
+                        </div>
+                        <div class="col-xl-2 col-lg-4 col-12 ms-xl-4">
+                            <button class="btnFooter mb-3">* Do Payment *</button>
+                        </div>
+                        <div class="col-xl-2 col-lg-4 col-12 ms-xl-4">
+                            <button class="btnFooter px-5 mb-3">* Search *</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid footersection2 pb-4">
+                    <div class="row mt-5 pt-4 ms-5 ps-5">
+                        <div class="col-xl-2 col-lg-2 col-12 mt-4">
+                            <div class="ps-4">
+                                <ul class="list-unstyled">
+                                    <li><a href="" class="footerlinkStyle">WebID Search</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Basic Search</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Quick Search</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Advanced Search</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Partner Search</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Star Match</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Preference Match</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-12 mt-4">
+                            <div class="footerlinkPadding ps-5">
+                                <ul class="list-unstyled">
+                                    <li><a href="" class="footerlinkStyle">Register</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Login</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Advertisec</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Branches</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Careers</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Services</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Success Stories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-12 mt-4">
+                            <div class="footerlinkPadding ps-5 ms-4">
+                                <ul class="list-unstyled">
+                                    <li><a href="" class="footerlinkStyle">About Us</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Contact Us</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Faq</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Help</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Privacy Policy</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Payment Policy</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-12 mt-4">
+                            <div class="footerlinkPadding ps-5 ms-5">
+                                <ul class="list-unstyled">
+                                    <li class="m3-3"><a href="" class="footerlinkStyle">Hindu Matrimony</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Christian Matrimony</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Muslim Matrimony</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Intercaste Matrimony</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Divorce Matrimony</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Nair Matrimony</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Ezhava Matrimony</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-12 mt-4">
+                            <div class="ps-3">
+                                <ul class="list-unstyled">
+                                    <li><a href="" class="footerlinkStyle">Latin Matrimony</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Roman Catholic Matrimony</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Shia Matrimony</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Sunni Matrimony</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Thiyya Matrimony</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Viswakarma Matrimony</a></li>
+                                    <li class="mt-3"><a href="" class="footerlinkStyle">Scheduled Caste Matrimony</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid bg-white">
+                    <div class="row py-3 ms-5 ps-5">
+                        <div class="col-xl-2 col-lg-2 col-12 mt-4">
+                            <div class="ps-4">
+                                <img src="../IMAGES/Googleplay.jpg" style="width:160px; height:45px;" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-12">
+                            <div class="footerlinkPadding ps-5 mt-4">
+                                <div class="social-links mt-2 ps-3 d-flex">
+                                    <a href="https://www.facebook.com/profile.php?id=100072370462682" class="facebook"><i
+                                    class="ri-facebook-fill"></i></a>
+                                    <a href="https://www.twitter.com/profile.php?id=100072370462682" class="twitter ms-1"><i
+                                    class="ri-twitter-fill"></i></a>
+                                    <a href="https://www.instagram.com/team4u_events/" class="instagram ms-1"><i
+                                    class="ri-instagram-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-12 mt-1">
+                            <div class="footerlinkPadding">
+                                <div class="d-flex logoPadding">
+                                    <div>
+                                        <img src="../IMAGES/marriageLogo.jpg" style="width:60px; height:70px;" alt="" class="mt-2">
+                                    </div>
+                                    <h1 class="mainHead mt-2">Malayali <span class="marriageHead">Marriage</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-2 col-12 mt-3">
+                            <div class="footerlinkPadding ps-5">
+                                <div class="social-links mt-2 ps-5 d-flex">
+                                    <a href="https://www.youtube.com/profile.php?id=100072370462682" class="youtube"><i
+                                    class="ri-youtube-fill"></i></a>
+                                    <a href="https://www.whatsapp.com/profile.php?id=100072370462682" class="whatsapp ms-1"><i
+                                    class="ri-whatsapp-fill"></i></a>
+                                    <a href="https://www.googleplus.com/team4u_events/" class="googleplus ms-1"><i
+                                    class="ri-google-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-12 mt-4">
+                            <div class="ps-2 appstoreImg">
+                                <img src="../IMAGES/Appstore.jpg" style="width:160px; height:45px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--------Footer end-------->
+            <!--------Footer Mobile start-------->
+
+            <div class="container d-md-none mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="input-group profileSearch mt-4">
+                            <input type="text" class="form-control inputFieldfooter" placeholder="Profile ID Search" aria-label="profile id search">
+                            <button class="input-group-text btnFoot" id="basic-addon2">Go</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center mt-4">
+                            <button class="paymentBtn">*Do Payment*</button>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text-center mt-4">
+                            <button class="premiumBtn">*Go to Premium*</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid footerBgmobile d-md-none">
+                <div class="row">
+                    <div class="col-6 footerList py-4 ps-4">
+                        <ul class="list-unstyled">
+                            <li "><a href=" " class="footerLinkMobile ">*Register</a></li>
+                        <li class="mt-1 "><a href=" " class="footerLinkMobile ">*Login</a></li>
+                        <li class="mt-1 "><a href=" " class="footerLinkMobile ">*Advertise</a></li>
+                        <li class="mt-1 "><a href=" " class="footerLinkMobile ">*Branches</a></li>
+                        <li class="mt-1 "><a href=" " class="footerLinkMobile ">*Careers</a></li>
+                        <li class="mt-1 "><a href=" " class="footerLinkMobile ">*Services</a></li>
+                        <li class="mt-1 "><a href=" " class="footerLinkMobile ">*Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 footerList py-4 ps-2 ">
+                    <ul class="list-unstyled ">
+                        <li"><a href="" class="footerLinkMobile">*About Us</a></li>
+                            <li class="mt-1"><a href="" class="footerLinkMobile">*Contact Us</a></li>
+                            <li class="mt-1"><a href="" class="footerLinkMobile">*Faq</a></li>
+                            <li class="mt-1"><a href="" class="footerLinkMobile">*Help</a></li>
+                            <li class="mt-1"><a href="" class="footerLinkMobile">*Privacy Policy</a></li>
+                            <li class="mt-1"><a href="" class="footerLinkMobile">*Payment Policy</a></li>
+                            <li class="mt-1"><a href="" class="footerLinkMobile">*Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid d-md-none">
+                <div class="row mt-3">
+                    <div class="col-4">
+                        <div class="mt-3">
+                            <img src="../IMAGES/Googleplay.jpg" style="width:100px; height:35px;" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex">
+                            <div>
+                                <img src="../IMAGES/marriageLogo.jpg" style="width:40px; height:40px;" alt="" class="mt-2">
+                            </div>
+                            <h1 class="mainHead mt-2">Malayali <span class="marriageHead">Marriage</span></h1>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mt-3">
+                            <img src="../IMAGES/Appstore.jpg" style="width:100px; height:35px;" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class=" my-3">
+                            <div class="social-links justify-content-around mt-2">
+                                <a href="https://www.facebook.com/profile.php?id=100072370462682" class="facebook ms-3"><i
+                                    class="ri-facebook-fill"></i></a>
+                                <a href="https://www.twitter.com/profile.php?id=100072370462682" class="twitter ms-3"><i
+                                    class="ri-twitter-fill"></i></a>
+                                <a href="https://www.instagram.com/team4u_events/" class="instagram ms-2"><i
+                                    class="ri-instagram-line"></i></a>
+                                <a href="https://www.youtube.com/profile.php?id=100072370462682" class="youtube ms-1"><i
+                                    class="ri-youtube-fill"></i></a>
+                                <a href="https://www.whatsapp.com/profile.php?id=100072370462682" class="whatsapp ms-3"><i
+                                    class="ri-whatsapp-fill"></i></a>
+                                <a href="https://www.googleplus.com/team4u_events/" class="googleplus ms-1"><i
+                                    class="ri-google-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--------Footer Mobile end-------->
+
+
+</body>
+
+</html>

@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Laptop Setting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Courgette&family=El+Messiri&family=Mate+SC&family=Oregano&family=Playball&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amita&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?ver=1.5">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+    <style>
+        p {
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="LapEditBg">
+
+    <!-------- Header start-------->
+
+    <div class="container-fluid headBg">
+        <div class="row">
+            <div class="col-12">
+                <div class="my-2 d-flex">
+                    <div class="logoBg ms-5">
+                        <div class="d-flex mx-3 d-none d-md-flex">
+                            <div class="">
+                                <img src="../IMAGES/marriageLogo.jpg" style="width:40px; height:40px;" alt="" class="mt-1">
+                            </div>
+                            <h1 class="mainHead mt-2">Malayali <span class="marriageHead">Marriage</span></h1>
+                        </div>
+                    </div>
+
+                    <!-------- MobileView Head -------->
+                    <div class="headMobileBg mt-3 d-md-none">
+                        <div class="d-flex">
+                            <div class="row">
+                                <div class="col-1 text-center mt-2">
+                                    <a href="" class=""><i class="material-icons iconBell">
+                                            notifications
+                                        </i></a>
+                                </div>
+                                <div class="col-10 d-flex ps-4 mt-1">
+                                    <img src="../IMAGES/marriageLogo.jpg" style="width:20px; height:20px;" alt="" class="mt-2 ms-5">
+                                    <h1 class="mainHead text-white mt-1">Malayali <span class="marriageHead text-white">Marriage</span></h1>
+                                </div>
+                                <div class="col-1 text-center">
+                                    <button class="mobileSearchIcon mt-1"><i class="ri-search-line"></i></button>
+                                </div>
+                                <!-- <i class="ri-menu-line iconMenu ms-4"></i> -->
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg p-0 ms-auto me-auto headMobileBg  d-none d-md-flex">
+                        <div class="container-fluid p-0">
+                            <!-- <a class="navbar-brand d-none d-md-flex loginStyle" href="#">Login</a> -->
+                            <button class="navbar-toggler mt-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class=" text-white navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">
+                                            <span class="headOptions">HOME</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">SEARCH</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">MATCHES</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">INBOX</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">CHAT</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">SERVICE</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headOptions">PAYMENT</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span class="headlastOption">CONTACT US</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ms-auto">
+                            <div class="d-none d-md-flex justify-space-around">
+                                <!-- <button class="btn login rounded-pill">Login</button> -->
+                                <i class="material-icons iconBell ms-4">
+                                    notifications
+                                </i>
+                                <img src="../IMAGES/avatarImg.png" alt="" class="avatarImg ms-4">
+                                <i class="ri-menu-line iconMenu ms-4"></i>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-3">
+        <div class="bg-white Section px-4 py-4">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-12">
+                    <div class="card srchCard ">
+                        <h5 class="text-center setSet py-3">
+                            <i class="ri-settings-5-line"></i> SETTINGS
+                        </h5>
+                        <div class="col-12 w-100  text-center">
+                            <p class=" setChange py-2">CHANGE SETTINGS <i class="material-icons setArrowBtn">
+                                keyboard_double_arrow_down
+                            </i></p>
+                        </div>
+                        <div class="d-flex align-items-start ">
+                            <div class="nav flex-column nav-pills w-100 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link Btn d-flex justify-content-start setLeftBut active" id="privacy-tab" data-bs-toggle="pill" data-bs-target="#privacy" type="button" role="tab" aria-controls="v-pills-home" aria-selected="false">
+                                <i class="material-icons setArrowBtn pe-2">security</i>Privacy</button>
+                                <button class="nav-link d-flex justify-content-start setLeftBut" id="profile-tab" data-bs-toggle="pill" data-bs-target="#profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                <i class="material-icons setArrowBtn pe-2">account_circle</i>Profile Settings</button>
+                                <button class="nav-link d-flex justify-content-start setLeftBut" id="alert-tab" data-bs-toggle="pill" data-bs-target="#alert" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                <i class="material-icons setArrowBtn pe-2">warning</i>Alerts & Updates</button>
+                                <button class="nav-link d-flex justify-content-start setLeftBut" id="delete-tab" data-bs-toggle="pill" data-bs-target="#delete" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <i class="material-icons setArrowBtn pe-2">delete_outline</i>Delete My Profile</button>
+                                <button class="nav-link d-flex justify-content-start setLeftBut" id="password-tab" data-bs-toggle="pill" data-bs-target="#password" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <i class="material-icons setArrowBtn pe-2">lock_open</i>Change Password</button>
+                                <button class="nav-link d-flex justify-content-start setLeftBut" id="email-tab" data-bs-toggle="pill" data-bs-target="#email" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <i class="material-icons setArrowBtn pe-2">mail_outline</i>Edit Email Address</button>
+                                <button class="nav-link d-flex justify-content-start setLeftBut" id="hide-tab" data-bs-toggle="pill" data-bs-target="#hide" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <i class="material-icons setArrowBtn pe-2">visibility_off</i>Hide / Activate My Profile</button>
+
+                                <div>
+                                    <img src="../IMAGES/settingPageimg.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-12 p-1">
+                    <div class=" px-3">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="privacy" role="tabpanel" aria-labelledby="privcy-tab" tabindex="0">
+                                <div class="px-4 py-2">
+                                    <h4 class="setSet ">MOBILE PRIVACY</h4>
+                                    <p>Control who can view your mobile number.</p>
+                                </div>
+                                <div class="px-xl-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="1" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                        <p> Show mobile numbers to paid members</p>
+                                        </label>
+                                    </div>
+                                    <p class="ps-xl-4"><i class="material-icons setArrowBtn">label_important</i>Paid members can reach you directly or through SMS</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="1" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                        <p>Show mobile number only to paid members from my community</p>
+                                        </label>
+                                    </div>
+                                    <p class="ps-xl-4"><i class="material-icons setArrowBtn">label_important</i>Paid members from your community can reach you directly or through SMS</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="1" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                        <p>Show mobile number only to paid members whom I had contacted/ responded</p>
+                                        </label>
+                                    </div>
+                                    <p class="ps-xl-4"><i class="material-icons setArrowBtn">label_important</i>Paid members whom you have contacted/ responded can reach you directly or through SMS </p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="1" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                        <p>Hide my mobile number</p>
+                                        </label>
+                                    </div>
+                                    <p class="ps-xl-4"><i class="material-icons setArrowBtn">label_important</i>Your mobile number will be hidden, however you can receive SMS from other paid members</p>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="1" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                        <p> Secure Connect</p>
+                                        </label>
+                                    </div>
+                                    <p class="ps-xl-4"><i class="material-icons setArrowBtn">label_important</i>Receive calls from paid members without showing my number</p>
+                                </div>
+                                <div class="px-3 mt-5">
+                                    <p><b>How It Works</b></p>
+                                    <p>You will receive a call from +91 8078000801 on your registered mobile number and will be connected to the caller.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                <div class="px-4 py-2">
+                                    <h4 class="setSet">PROFILE SETTINGS</h4>
+                                    <p>Your profile privacy has been set as "Show my profile to all including visitors"</p>
+                                </div>
+                                <form action="">
+                                    <div class="px-xl-3 mt-xl-5">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="1" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                            <p> Show my profile to all including visitors.</p>
+                                            </label>
+                                        </div>
+                                        <p class="ps-xl-4"><i class="material-icons setArrowBtn">label_important</i>This will help prospects share your profile with their family members, who are not registered members.*</p>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="1" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                            <p>Show my profile to registered members only.</p>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                <p>Let others know that I shortlisted their profile</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="px-4">
+                                        <button type="submit" class="sBtn px-4 my-5">SUBMIT</button>
+                                        <p><i class="material-icons setStar">star</i>When prospects "forward" your profile, they can share it with other members not registered with Malayali Marraiges. </p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="alert" role="tabpanel" aria-labelledby="alert-tab" tabindex="0">
+                                <div class="px-4 py-2">
+                                    <h4 class="setSet">SET ALERTS</h4>
+                                    <p>You will receive the folowing Email or SMS alerts from us which are listed below. If you wish to unsubscrible anyone amoung them, please change it."</p>
+                                </div>
+                                <div>
+                                    <h4 class="setSet ps-4">EMAIL ALERTS</h4>
+                                    <div class="settingsChoose me-lg-5 mt-4 me-xl-5 ms-xl-2 ms-lg-2">
+                                        <input type="checkbox" class="setAlrtCheck d-none pt-3" id="settingAlert1">
+                                        <label class="setAlrtLabel d-flex pt-3" for="settingAlert1"> <span class="leftIcons iconunchecked"> <i class="material-icons">radio_button_unchecked</i>  </span><span class="leftIcons iconchecked">  <i class="material-icons">check_circle</i> </span> <span class="settingsAlertCheck ps-3"> Enable notification email when there is a matching profile </span> </label>
+                                    </div>
+                                    <div class="settingsChoose me-lg-5 mt-4 me-xl-5 ms-xl-2 ms-lg-2">
+                                        <input type="checkbox" class="setAlrtCheck d-none pt-3" id="settingAlert2">
+                                        <label class="setAlrtLabel d-flex pt-3" for="settingAlert2"> <span class="leftIcons iconunchecked"> <i class="material-icons">radio_button_unchecked</i>  </span><span class="leftIcons iconchecked">  <i class="material-icons">check_circle</i> </span> <span class="settingsAlertCheck ps-3"> Enable notification email when a user viewed your profile </span> </label>
+                                    </div>
+                                    <div class="settingsChoose me-lg-5 mt-4 me-xl-5 ms-xl-2 ms-lg-2">
+                                        <input type="checkbox" class="setAlrtCheck d-none pt-3" id="settingAlert3">
+                                        <label class="setAlrtLabel d-flex pt-3" for="settingAlert3"> <span class="leftIcons iconunchecked"> <i class="material-icons">radio_button_unchecked</i>  </span><span class="leftIcons iconchecked">  <i class="material-icons">check_circle</i> </span> <span class="settingsAlertCheck ps-3"> Enable members send an interest</span> </label>
+                                    </div>
+                                    <div class="settingsChoose me-lg-5 mt-4 me-xl-5 ms-xl-2 ms-lg-2">
+                                        <input type="checkbox" class="setAlrtCheck d-none pt-3" id="settingAlert4">
+                                        <label class="setAlrtLabel d-flex pt-3" for="settingAlert4"> <span class="leftIcons iconunchecked"> <i class="material-icons">radio_button_unchecked</i>  </span><span class="leftIcons iconchecked">  <i class="material-icons">check_circle</i> </span> <span class="settingsAlertCheck ps-3"> Enable members view your number </span> </label>
+                                    </div>
+                                    <div class="settingsChoose me-lg-5 mt-4 me-xl-5 ms-xl-2 ms-lg-2">
+                                        <input type="checkbox" class="setAlrtCheck d-none pt-3" id="settingAlert5">
+                                        <label class="setAlrtLabel d-flex pt-3" for="settingAlert5"> <span class="leftIcons iconunchecked"> <i class="material-icons">radio_button_unchecked</i>  </span><span class="leftIcons iconchecked">  <i class="material-icons">check_circle</i> </span> <span class="settingsAlertCheck ps-3"> Enable members request for your information  </span> </label>
+                                    </div>
+                                    <button class="sBtn ms-4 px-4 my-5">SUBMIT</button>
+                                </div>
+                                <div>
+                                    <h4 class="setSet ps-4">SMS ALERTS</h4>
+                                    <div class="settingsChoose me-lg-5 mt-4 me-xl-5 ms-xl-2 ms-lg-2">
+                                        <input type="checkbox" class="setAlrtCheck d-none pt-3" id="settingAlert6">
+                                        <label class="setAlrtLabel d-flex pt-3" for="settingAlert6"> <span class="leftIcons iconunchecked"> <i class="material-icons">radio_button_unchecked</i>  </span><span class="leftIcons iconchecked">  <i class="material-icons">check_circle</i> </span> <span class="settingsAlertCheck ps-3"> Enable members view your number  </span> </label>
+                                    </div>
+                                    <div class="settingsChoose me-lg-5 mt-4 me-xl-5 ms-xl-2 ms-lg-2">
+                                        <input type="checkbox" class="setAlrtCheck d-none pt-3" id="settingAlert7">
+                                        <label class="setAlrtLabel d-flex pt-3" for="settingAlert7"> <span class="leftIcons iconunchecked"> <i class="material-icons">radio_button_unchecked</i>  </span><span class="leftIcons iconchecked">  <i class="material-icons">check_circle</i> </span> <span class="settingsAlertCheck ps-3"> Enable members send an interest  </span> </label>
+                                    </div>
+                                    <div class="settingsChoose me-lg-5 mt-4 me-xl-5 ms-xl-2 ms-lg-2">
+                                        <input type="checkbox" class="setAlrtCheck d-none pt-3" id="settingAlert8">
+                                        <label class="setAlrtLabel d-flex pt-3" for="settingAlert8"> <span class="leftIcons iconunchecked"> <i class="material-icons">radio_button_unchecked</i>  </span><span class="leftIcons iconchecked">  <i class="material-icons">check_circle</i> </span> <span class="settingsAlertCheck ps-3"> Enable voice sms for staff service </span> </label>
+                                    </div>
+                                    <button class="sBtn ms-4 px-4 my-5">SUBMIT</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="delete" role="tabpanel" aria-labelledby="delete-tab" tabindex="0">
+                                <div class="px-4 py-2">
+                                    <h4 class="setSet">DELETE MY PROFILE </h4>
+                                    <p>Please choose a reason for why you delete your profile</p>
+                                </div>
+                                <div class="container-fluid settype">
+                                    <div class="row p-4">
+                                        <div class="col-xl-6 col-lg-6 col-12 pe-3">
+                                            <p>Reason</p>
+                                            <select class="form-select setBox py-3">
+                                                <option >Marriage Fixed</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-12 ps-3">
+                                            <p>Comment</p>
+                                            <input class="form-control setBox py-3" type="text" placeholder="Enter Your Comment">
+                                        </div>
+                                    </div>
+                                    <div class="row p-4">
+                                        <div class=" col-12">
+                                            <div class=" setChange ">
+                                                <p class="p-3">Congratulations to you from Malayali Marraiges team. We are so happy that you found your soulmate from our website. You can share the success happened in your life through our Malali Marraiges. Click on
+                                                    Add your success stories to add your experience with Malayali Marraiges.</p>
+                                                <div class="row">
+                                                    <div class="col-xl-6 col-lg-6 col-12 p-3 text-end">
+                                                        <i class="material-icons setStoryBtnIcon">edit_note</i><button class=" setStoryBtn ">Add Your Story</button>
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-12 p-3">
+                                                        <button class=" setDelBth px-3 py-1">Deleted Account</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p><i class="material-icons setBtnDel setStoryBtnIcon py-lg-5  py-xl-5">warning</i>Deleted account cannot be restored</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab" tabindex="0">
+                                <div class="px-4 py-2">
+                                    <h4 class="setSet">CHANGE YOUR PASSWORD </h4>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row settype p-4">
+                                        <div class="col-xl-8 col-lg-9 col-12 d-flex">
+                                            <input class="form-control mb-5 setBtnPassword" type="text" placeholder="Enter Current Password"><span class="setSpan"><i class="material-icons setStoryBtnIcon">lock</i></span>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-9 col-12 d-flex">
+                                            <input class="form-control mb-5 setBtnPassword" type="text" placeholder="Enter New Password"><span class="setSpan"><i class="material-icons setStoryBtnIcon">lock</i></span>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-9 col-12 d-flex">
+                                            <input class="form-control  setBtnPassword" type="text" placeholder="Confirm Password"><span class="setSpan"><i class="material-icons setStoryBtnIcon">lock</i></span>
+                                        </div>
+                                    </div>
+                                    <button class="sBtn ms-4 px-5 my-4">Save</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="email" role="tabpanel" aria-labelledby="email-tab" tabindex="0">
+                                <div class="px-4 pe-2 py-2">
+                                    <h4 class="setSet pb-5">EDIT EMAIL ADDRESS</h4>
+                                    <P> You need to add a valid email address to receive all valuable interests, views and other information send by us. So make sure you add a valid and active email address </P>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row settype p-4">
+                                        <div class="col-xl-8 col-lg-9 col-12 d-flex">
+                                            <input class="form-control  setBtnPassword" type="text" placeholder="Edit email address"><span class="setSpan"><i class="material-icons setStoryBtnIcon">edit</i></span>
+                                        </div>
+                                    </div>
+                                    <button class="sBtn ms-4 px-5 my-4">Save</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="hide" role="tabpanel" aria-labelledby="hide-tab" tabindex="0">
+                                <div class="px-4 pe-2 py-2">
+                                    <h4 class="setSet pb-5">HIDE/ ACTIVE MY PROFILE</h4>
+                                    <P>You can temporarily deactivate your profile if you do not want to delete it. On deactivation your profile will be hidden from our members and you will not be able to contact any member until you activate
+                                    </P>
+                                </div>
+                                <div class="px-4 pe-2 py-2">
+                                    <h5 class="setSet ">Your profile status is currently active</h5>
+                                    <P>If you would like to change your status, please select Deactivate Now. </P>
+                                </div>
+                                <div class=" setChange mx-4 ">
+                                    <div class="container">
+                                        <div class="row p-4 setHideBtn">
+                                            <p class="p-3">
+                                                Select the number of days / months you would like to keep your profile deactivated
+                                            </p>
+                                            <select class="form-select setHide ">
+                                                <option >7 days</option>
+                                                <option >15 days</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="ms-4"><i class="material-icons setBtnDel setStoryBtnIcon py-5">warning</i>Your profile will be activated after the selected time period elapses. E.G. If you selected 15 days as the time period, your profile will be deactivated
+                                            for 15 days and will be automatically activated on the 16th day. You will receive a mailer in this regard. Once you deactivate your profile you will not be able to contact any member either through Express Interest,
+                                            Personalised Messages or Chat and your profile details will also not be visible to members.
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="sBtn ms-4 px-2 py-1 my-4">Deactivate Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

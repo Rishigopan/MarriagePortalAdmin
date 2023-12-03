@@ -1,0 +1,4063 @@
+/* -------- Modal start-------- */
+
+.modalForm label {
+    font-family: "Nunito", sans-serif;
+    color: black;
+}
+
+.modalForm input {
+    border: 2px solid rgb(171, 168, 168);
+    border-radius: 10px;
+}
+
+
+/* -------- Modal end-------- */
+
+
+/*--------- Bulk Image start ------ */
+
+.UploadMainDiv {
+    border-radius: 10px;
+    background-color: rgb(248, 248, 248);
+}
+
+.UploadMainDiv .UploadInnerDiv {
+    border-radius: 15px;
+    border: 3px dashed lightgray;
+}
+
+
+/*--------- Bulk Image end ------ */
+
+
+/* -------- Header start-------- */
+
+.header {
+    margin-top: 0px;
+}
+
+.mainHead {
+    color: #ff0185;
+    font-size: 30px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.marriageHead {
+    color: #148ad0;
+    font-size: 30px;
+}
+
+.subHeading {
+    padding: 0;
+    padding-right: 12px;
+    border-right: 3px solid #ff0185;
+    color: #ff0185;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.subHeading:hover {
+    color: #148ad0;
+}
+
+.contactSubhead {
+    color: #ff0185;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.contactSubhead:hover {
+    color: #148ad0;
+}
+
+.subHead {
+    margin-left: 150px;
+    height: 30px;
+    margin-top: 8px;
+}
+
+.homeImg {
+    width: 800px;
+    height: 600px;
+    border-radius: 80px 0 0 0;
+    margin-left: 50px;
+}
+
+.logoPadding {
+    margin-left: 40px;
+}
+
+.navbarMargin {
+    margin-left: 200px;
+}
+
+.loginStyle {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
+}
+
+.navbarBg {
+    background-color: #fb188d !important;
+}
+
+
+/* -------- Header end-------- */
+
+
+/* -------- Form start-------- */
+
+.formPadding {
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+.btnRegister {
+    border-radius: 15px 0 15px 0;
+    padding: 5px 52px;
+    margin-left: 20px;
+    font-size: 22px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    background-color: #ff0185;
+    box-shadow: rgb(45 35 66 / 40%) 0 2px 4px, rgb(137 133 145 / 30%) 0 7px 13px -3px, rgb(118 119 125 / 50%) 0 -3px 0 inset;
+    border: none;
+}
+
+.login {
+    font-family: "Nunito", sans-serif;
+    font-size: 25px;
+    color: white;
+    background-color: #ff339a;
+    border: 2px solid #fffafd;
+    padding: 1px 15px;
+}
+
+.login:hover {
+    background-color: white;
+    color: #fb188d !important;
+    border: 2px solid #fb188d !important;
+}
+
+.bellIcon {
+    color: #ff0185;
+    font-size: 28px;
+}
+
+.labelStyle {
+    margin-top: 3px;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.selectField {
+    border-radius: 0px;
+    border-bottom: 2px solid rgb(223, 222, 222) !important;
+    border: none;
+    box-shadow: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+}
+
+.inputField::placeholder {
+    color: white !important;
+}
+
+.btnSubmit {
+    border-radius: 10px 10px;
+    padding: 3px 20px;
+    font-size: 18px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    background-color: #ff0185;
+    box-shadow: -2px 2px 2px grey;
+    /* box-shadow: rgb(45 35 66 / 40%) 0 2px 4px, rgb(137 133 145 / 30%) 0 7px 13px -3px, rgb(118 119 125 / 50%) 0 -3px 0 inset; */
+    border: none;
+}
+
+select.choose {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px 10px;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23ddd '><polygon points='0,0 100,0 50,50'/></svg>") no-repeat !important;
+    background-color: white !important;
+    background-size: 13px !important;
+    background-position: calc(100% - 20px) 12px !important;
+    background-repeat: no-repeat;
+}
+
+select option {
+    font-size: 15px;
+    font-family: "Nunito", sans-serif;
+}
+
+.termsStyle {
+    font-size: 17px;
+    font-family: "Nunito", sans-serif;
+}
+
+.forEnquiry {
+    color: #ff0185;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Zen Antique', serif;
+}
+
+.privacyPolicy {
+    margin-left: 40px;
+}
+
+.radio {
+    padding-left: 80px;
+}
+
+.radioChecked:active {
+    color: #fb188d;
+}
+
+.form-check-input:checked {
+    background-color: rgb(59, 57, 57);
+}
+
+select::after {
+    color: rgb(59, 57, 57) !important;
+}
+
+@media screen and (min-width:300px) and (max-width:500px) {
+    .termsStyle {
+        color: white;
+    }
+    .spanStyle {
+        color: rgb(0, 103, 163);
+    }
+}
+
+
+/* -------- Form end-------- */
+
+
+/* -------- SearchBar start -------- */
+
+.searchBar {
+    background-color: #ff2294;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 18px 50px 8px 50px;
+    box-shadow: rgba(51, 50, 52, 0.3) 0 2px 4px, rgba(51, 50, 52, 0.3) 0 7px 13px -3px, rgba(51, 50, 52, 0.3) 0 -3px 0 inset;
+}
+
+.barinputField {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: #ff2294;
+    color: white;
+}
+
+.barinputField::after {
+    color: white !important;
+}
+
+.btnSearch {
+    border-radius: 10px 10px;
+    padding: 5px 40px;
+    font-size: 20px;
+    color: #ff2294;
+    font-family: 'Verdana';
+    font-weight: 600;
+    background-color: #ffffff;
+    box-shadow: rgb(45 35 66 / 40%) 0 2px 4px, rgb(137 133 145 / 30%) 0 7px 13px -3px, rgb(118 119 125 / 50%) 0 -3px 0 inset;
+    border: none;
+}
+
+
+/* -------- SearchBar end -------- */
+
+
+/* -------- Featured start -------- */
+
+.secondHeading {
+    font-size: 30px;
+    color: black;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.mainCard {
+    border-radius: 30px;
+    border: 2px solid rgb(153, 150, 150);
+}
+
+.featuredImg {
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.cardText {
+    font-family: "Nunito", sans-serif;
+}
+
+
+/* -------- Featured end -------- */
+
+
+/* -------- Carousel start -------- */
+
+.quoteBg {
+    background-image: linear-gradient(to right, #ff0c8a, #ff89c6);
+}
+
+.quote {
+    background-color: #fa6eb7;
+    padding: 70px;
+    margin: 0 30px 0 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.quoteHead {
+    font-family: "Nunito", sans-serif;
+    font-size: 32px;
+    color: white;
+}
+
+.thirdHeading {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.testHead {
+    font-size: 23px;
+    color: white;
+}
+
+.viewMoreBtn {
+    background-color: white;
+    color: #ff0185;
+    padding: 6px 27px;
+    border: none;
+    border-radius: 8px;
+}
+
+.dotButton {
+    border-radius: 50%;
+    height: 20px !important;
+    width: 20px !important;
+    margin: 15px 0px 10px 0px;
+    margin-left: 10px;
+}
+
+.testPara {
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+@media screen and (min-width:992px) and (max-width:1285px) {
+    .quote {
+        padding: 70px;
+        margin: 0 0 0 50px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .quoteHead {
+        font-family: "Nunito", sans-serif;
+        font-size: 28px;
+        color: white;
+    }
+}
+
+
+/* -------- Carousel end -------- */
+
+
+/* -------- Malayali Marriage start-------- */
+
+.malayaliHead {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+.crowmImg {
+    width: 110px;
+    height: 70px;
+}
+
+.bottomdesignImg {
+    width: 250px;
+    height: 40px;
+}
+
+.btnGetstarted {
+    border-radius: 10px 10px;
+    padding: 5px 20px;
+    font-size: 20px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    background-image: linear-gradient(to right, #ef037d, #fd85c3);
+    box-shadow: rgb(45 35 66 / 40%) 0 2px 4px, rgb(137 133 145 / 30%) 0 7px 13px -3px, rgb(118 119 125 / 50%) 0 -3px 0 inset;
+    border: none;
+}
+
+.marriagePara {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.iconAll {
+    width: 90px;
+    height: 90px;
+    box-shadow: 0 8px 10px -7px rgb(53, 52, 52);
+}
+
+
+/* -------- Malayali Marriage end -------- */
+
+
+/* -------- Footer Start -------- */
+
+.footer {
+    background-color: #020202;
+}
+
+.footerHead {
+    color: white;
+}
+
+.btnFooter {
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 20px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    background-color: #ba004b;
+    box-shadow: -2px 0 2px grey;
+    box-shadow: rgb(45 35 66 / 40%) 0 2px 4px, rgb(137 133 145 / 30%) 0 7px 13px -3px, rgb(118 119 125 / 50%) 0 -3px 0 inset;
+    border: none;
+}
+
+.btnFoot {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    background-color: #1ba7f7;
+}
+
+.inputFooter {
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #ba004b;
+    box-shadow: -2px 0 2px grey;
+    font-family: "Nunito", sans-serif;
+}
+
+.inputFooter::placeholder {
+    color: #ffffff;
+}
+
+.goBtn {
+    color: #ba004b;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: -2px 0 2px grey;
+}
+
+.input-group input::placeholder {
+    padding-left: 10px;
+}
+
+.footerlinkStyle {
+    text-decoration: none;
+    color: white;
+}
+
+.footerlinkPadding {
+    padding-left: 20px;
+}
+
+.footersection2 {
+    background-color: #ba004b;
+}
+
+.profileSearch {
+    border-radius: 10px;
+    padding: 6px 0 6px 12px;
+}
+
+.social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background-color: #fa0584;
+    color: #fff;
+    line-height: 1;
+    padding: 7px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    text-decoration: none;
+    border: 2px solid white;
+}
+
+.social-links a:hover {
+    background: #148ad0;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (min-width:767px) and (max-width:1285px) {
+    .social-links i {
+        font-size: 15px;
+    }
+    .social-links a {
+        font-size: 12px;
+        display: inline-block;
+        background-color: #fa0584;
+        color: #fff;
+        line-height: 1;
+        padding: 5px 5px;
+        border-radius: 50%;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        transition: 0.3s;
+        text-decoration: none;
+        border: 2px solid white;
+    }
+    .appstoreImg {
+        margin-left: 70px;
+    }
+}
+
+
+/* -------- Footer end -------- */
+
+
+/* -------- Footer Mobile start -------- */
+
+.forEnquiryMobile {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+}
+
+.profileSearch {
+    margin: 20px 80px 0 0px;
+}
+
+.inputFieldfooter {
+    border-radius: 10px;
+    border-color: rgb(110, 106, 106);
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    box-shadow: -3px 0px 2px grey;
+}
+
+.paymentBtn {
+    border-radius: 10px;
+    padding: 10px 110px;
+    font-size: 20px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    background-color: #fb188d;
+    box-shadow: rgb(45 35 66 / 40%) 0 2px 4px, rgb(137 133 145 / 30%) 0 7px 13px -3px, rgb(118 119 125 / 50%) 0 -3px 0 inset;
+    border: none;
+}
+
+.premiumBtn {
+    border-radius: 10px;
+    padding: 10px 100px;
+    font-size: 20px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    background-color: #fb188d;
+    box-shadow: rgb(45 35 66 / 40%) 0 2px 4px, rgb(137 133 145 / 30%) 0 7px 13px -3px, rgb(118 119 125 / 50%) 0 -3px 0 inset;
+    border: none;
+}
+
+.footerBgmobile {
+    background-color: #ff329c;
+}
+
+.footerLinkMobile {
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+
+/* -------- Footer Mobile end -------- */
+
+@media screen and (min-width:800px) {
+    .navbarBg {
+        background-color: white !important;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:991px) {
+    .homeImg {
+        width: 600px;
+        height: 500px;
+        border-radius: 80px 0 0 0;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:850px) {
+    .homeImg {
+        width: 362px;
+        height: 300px;
+        border-radius: 80px 0 0 0;
+        margin-left: 5px;
+    }
+    .subHead {
+        margin-left: 10px;
+        height: 30px;
+        margin-top: 10px;
+    }
+    .mainHead {
+        font-size: 21px;
+    }
+    .marriageHead {
+        font-size: 21px;
+    }
+    .subHeading {
+        font-size: 12px;
+    }
+    .contactSubhead {
+        font-size: 12px;
+    }
+    .navbarMargin {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:500px) {
+    .formBg {
+        background-color: #fb188d;
+        margin-top: 20px;
+    }
+    .formPadding {
+        padding: 1px 20px 30px 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .login {
+        margin-top: 30px;
+    }
+    .login:focus {
+        font-family: Georgia !important;
+        font-size: 25px !important;
+        color: white !important;
+        background-color: #fb188d !important;
+        border: 2px solid #fffafd !important;
+        padding: 1px 15px !important;
+    }
+    .headMobileBg {
+        background-color: #ff339a;
+        padding: 0;
+    }
+    .logoPadding {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .privacyPolicy {
+        margin-left: 0;
+    }
+    .subHeading {
+        border-right: none;
+    }
+    .LapinputField {
+        border-radius: 0px;
+        border-bottom: 2px solid rgb(0, 0, 0) !important;
+        border: 0;
+    }
+    .inputField {
+        border-radius: 0px;
+        border-bottom: 2px solid rgb(255, 253, 253) !important;
+        border: none;
+        background-color: #fb188d;
+        box-shadow: none;
+        font-family: "Nunito", sans-serif;
+        font-size: 22px;
+    }
+    .inputField:focus {
+        border-radius: 0px;
+        border-bottom: 2px solid grey !important;
+        border: none;
+        background-color: #fb188d;
+        box-shadow: none;
+    }
+    .labelStyle {
+        margin-top: 0;
+        font-size: 22px;
+        font-family: "Nunito", sans-serif;
+        color: white;
+    }
+    .selectField {
+        color: white !important;
+    }
+    .btnSubmit {
+        background-color: white;
+        color: #fb188d;
+        font-weight: 600;
+    }
+    .btnRegister {
+        margin-left: 50px;
+    }
+    .find {
+        color: #fb188d;
+        font-size: 35px;
+        font-family: "Nunito", sans-serif;
+        font-weight: 600;
+    }
+    .searchBar {
+        background-color: white;
+        border: 3px solid #fb188d;
+        padding: 18px 40px 8px 40px;
+        border-radius: 40px;
+    }
+    .findMobileView {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .barinputField {
+        margin-top: 20px;
+        background-color: white;
+        color: #fb188d;
+        font-size: 20px;
+        font-family: "Nunito", sans-serif;
+        border: 1px solid #fb188d;
+        ;
+    }
+    .formCheck {
+        margin-left: 40px;
+    }
+    .btnSearch {
+        background-color: #fb188d;
+        color: white;
+        margin: 30px 0 40px 15px;
+    }
+    .formLabel1 {
+        color: #fb188d;
+        font-size: 20px;
+    }
+    .formLabel2 {
+        color: #fb188d;
+        font-size: 20px;
+    }
+    .quoteHead {
+        font-family: "Nunito", sans-serif;
+        font-size: 25px;
+    }
+    .quote {
+        padding: 50px 60px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .btnFooter {
+        margin-top: 20px;
+    }
+}
+
+
+/* -------- Profile Lapview start-------- */
+
+.bodyBg {
+    background-color: rgb(234, 233, 233);
+}
+
+.navBg {
+    background-color: #ff329c;
+    padding: 0;
+}
+
+.subHeadBg {
+    background-color: rgb(230, 227, 227);
+}
+
+.contentBg {
+    background-color: rgb(230, 227, 227);
+}
+
+.DetailsBg {
+    background-color: white;
+}
+
+.headLink {
+    color: white;
+    border-right: 2px solid white;
+    font-size: 18px;
+    font-family: 'Vollkorn', serif;
+    padding: 3px 0 0 0;
+    margin: 0;
+}
+
+.headlastLink {
+    color: white;
+    font-size: 18px;
+    font-family: 'Vollkorn', serif;
+    padding: 3px 0 0 0;
+    margin: 0;
+}
+
+.select {
+    padding: 3px 3px 3px 15px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    .selectMargin {
+        padding-bottom: 5px;
+    }
+}
+
+.inputFieldWhite {
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    color: #212529 !important;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 3px 3px 15px;
+    font-family: "Nunito", sans-serif;
+}
+
+.btnSelect {
+    border-radius: 8px;
+    background-color: #1ba7f7;
+    color: white;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.checkBox {
+    background-color: #1ba7f7;
+    border-radius: 8px;
+    padding: 3px 22px;
+    cursor: pointer;
+}
+
+.check {
+    cursor: pointer;
+}
+
+.dropDnGreen {
+    border-radius: 8px;
+    background-color: #35cd68;
+    color: white;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+}
+
+.btnFeedback {
+    border-radius: 5px;
+    background-color: #fb3597;
+    color: white;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 13px;
+    padding: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.laptopFilterbtnPink {
+    border-radius: 10px 10px;
+    padding: 3px 20px;
+    font-size: 18px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    background-color: #ff0185;
+    box-shadow: -2px 2px 2px grey;
+    border: none;
+}
+
+.dropDnLightPink {
+    border-radius: 8px;
+    background-color: #ff98c5;
+    color: white;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.iconFilter {
+    background-color: rgb(253, 48, 48);
+    color: white;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.iconSearch {
+    background-color: #1ba7f7;
+    color: white;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.statusBtn {
+    background-color: rgb(164, 159, 159);
+    color: white;
+    padding: 0 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.dropColor {
+    color: rgb(236, 0, 0);
+}
+
+.whatsappLink {
+    text-decoration: none;
+}
+
+.iconsBg {
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+}
+
+.icons i {
+    color: green;
+    font-size: 28px;
+}
+
+.linkBtn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #00ccfd;
+    color: black;
+    border: none;
+    font-size: 8px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.lapviewImg {
+    width: 24px;
+    height: 24px;
+}
+
+.BrideAndGroomImg {
+    width: 120px;
+    height: 130px;
+    border-radius: 12px !important;
+}
+
+.whatslinkStyle {
+    font-size: 13px;
+    font-weight: 700px;
+    font-family: "Nunito", sans-serif;
+    padding: 0 !important;
+}
+
+.tableBorder {
+    border-radius: 20px;
+}
+
+.tableHeadBg1 {
+    /* background-color: rgb(216, 241, 249) !important; */
+    font-size: 13px;
+}
+
+
+/* .tableHead2 {
+    background-color: #fdb7d9 !important;
+} */
+
+.maleHeader {
+    background-color: rgb(197, 237, 252) !important;
+}
+
+.femaleHeader {
+    background-color: #f5d1e2 !important;
+}
+
+.profileIdSize {
+    font-size: 15px !important;
+    letter-spacing: 2px!important;
+}
+
+.profileIdMobile {
+    letter-spacing: 2px!important;
+}
+
+.lapViewFont {
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.headBorder {
+    border-radius: 0 20px 0 0;
+}
+
+.tableSize {
+    font-size: 10px;
+}
+
+.headSize1 {
+    width: 200px;
+    height: 20px;
+}
+
+.headSize2 {
+    width: 190px;
+    height: 20px;
+}
+
+.headSize3 {
+    width: 100px;
+}
+
+table tbody tr .tableHead {
+    padding: 0 0 0 10px !important;
+    margin: 0 !important;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+table tbody td>.heightAdjust {
+    height: 20px !important;
+    overflow: hidden !important;
+    padding: 0px;
+}
+
+table tbody tr td {
+    padding: 0 0 0 10px !important;
+    margin: 0 !important;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.mobileNoBg1 {
+    background-color: #e9e9e9;
+}
+
+.mobileNoBg2 {
+    background-color: #70d5ff;
+    background-color: #82cbeb;
+}
+
+.callIcon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #17a1e9;
+    color: white;
+    font-size: 13px;
+    padding: 4px;
+}
+
+.copyIcon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #078bd7;
+    color: white;
+    font-size: 13px;
+    padding: 4px;
+}
+
+.showEntries {
+    font-family: "Nunito", sans-serif;
+    color: rgb(51, 51, 241);
+    font-size: 15px;
+}
+
+.switch .btn-mobile-check+label {
+    background-color: #6fc9fc;
+    color: rgb(255, 255, 255);
+    padding: 30px 1px;
+    border-radius: 0px 40px 40px 0px;
+    /* box-shadow: -1px 1px 2px rgb(0 0 0) !important; */
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    position: fixed;
+    z-index: 99;
+    top: 40%;
+    left: 0px;
+}
+
+.switch .btn-mobile-check+label:hover,
+.switch .btn-mobile-check+label:focus {
+    background-color: #c0c2c3;
+    color: rgb(110, 109, 109);
+}
+
+.switch .btn-mobile-check:checked+label {
+    background-color: #c0c2c3 !important;
+    color: rgb(110, 109, 109);
+    border: none !important;
+}
+
+.switch .btn-check+label {
+    background-color: #6fc9fc;
+    color: rgb(255, 255, 255);
+    padding: 30px 1px;
+    border-radius: 40px 0 0 40px;
+    /* box-shadow: -1px 1px 2px rgb(0 0 0) !important; */
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    position: fixed;
+    z-index: 99;
+    top: 40%;
+    right: 0px;
+}
+
+.switch .btn-check+label:hover,
+.switch .btn-check+label:focus {
+    background-color: #c0c2c3;
+    color: rgb(110, 109, 109);
+}
+
+.switch .btn-check:checked+label {
+    background-color: #c0c2c3 !important;
+    color: rgb(110, 109, 109);
+    border: none !important;
+}
+
+.switch label {
+    background-color: white;
+    color: #000000;
+}
+
+.switch label:hover {
+    background-color: #F50414;
+    color: white;
+}
+
+.lapviewPrevNextIcon {
+    color: #078bd7 !important;
+}
+
+.lapviewPreNextBtn {
+    border: none;
+    background-color: rgb(234, 233, 233);
+    ;
+}
+
+.profileIdLapFont {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 18px !important;
+}
+
+.custFullName {
+    word-wrap: none;
+}
+
+
+/* @media screen and (max-width:500px) {
+    .select {
+        background-color: white;
+        color: black;
+    }
+} */
+
+
+/* -------- Profile Lapview end-------- */
+
+
+/* -------- Laptop Edit Page end-------- */
+
+h3,
+h4,
+p {
+    font-family: "Nunito", sans-serif;
+}
+
+.LapEditBg {
+    background-color: rgb(239, 239, 239);
+}
+
+.headBg {
+    background-color: #ff339a;
+}
+
+.logoBg {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.headOptions {
+    color: white;
+    padding-right: 12px;
+    border-right: 3px solid #ffffff;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+}
+
+.headlastOption {
+    color: white;
+    padding-right: 12px;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+}
+
+.iconBell {
+    color: #9fdcff;
+    font-size: 28px;
+}
+
+.iconMenu {
+    color: white;
+    font-size: 22px;
+}
+
+.avatarImg {
+    width: 31px;
+    height: 31px;
+}
+
+.Section {
+    border-radius: 15px;
+}
+
+.Border {
+    border: 3px solid #1ba7f7;
+    border-radius: 15px;
+}
+
+.headStyle {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.profileImg {
+    width: 75px;
+    height: 85px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+.btnPink {
+    border-radius: 5px;
+    padding: 2px 12px;
+    font-size: 18px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    background-color: #ff329c;
+    box-shadow: -2px 2px 2px rgb(155, 155, 155);
+    /* box-shadow: rgb(45 35 66 / 40%) 0 2px 4px, rgb(137 133 145 / 30%) 0 7px 13px -3px, rgb(118 119 125 / 50%) 0 -3px 0 inset; */
+    border: none;
+}
+
+.barBg {
+    background-color: #32cd31;
+}
+
+.btnViolet {
+    border-radius: 5px;
+    padding: 1px 18px 1px 8px;
+    background-color: #e000c6;
+    color: rgb(13, 13, 13);
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    text-align: left;
+}
+
+.blueBtn {
+    border-radius: 5px;
+    padding: 1px 32px 1px 8px;
+    background-color: #9a99ff;
+    color: rgb(13, 13, 13);
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Nunito", sans-serif;
+}
+
+.btnYellow {
+    border-radius: 5px;
+    padding: 1px 35px 1px 12px;
+    background-color: #cd9933;
+    color: rgb(13, 13, 13);
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.redBtn {
+    border-radius: 5px;
+    padding: 1px 10px 1px 10px;
+    background-color: #ff6766;
+    color: rgb(13, 13, 13);
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.profileSelected {
+    color: #000000;
+    border-bottom: 3px solid #148ad0;
+}
+
+.camera {
+    font-size: 25px;
+}
+
+.iconPadding {
+    padding-bottom: -10px;
+}
+
+.horizonBorder {
+    border: 2px solid rgb(223, 221, 221);
+    border-radius: 15px;
+}
+
+.verticalBorder {
+    border: 3px solid rgb(223, 221, 221);
+    border-radius: 15px;
+}
+
+.leftvertBorder {
+    border: 3px solid rgb(202, 199, 199);
+    border-radius: 30px;
+    min-height: 60vh;
+}
+
+.btnWhite {
+    border-radius: 10px;
+    padding: 1px 15px;
+    background-color: white;
+    color: #06b7fb;
+    border: 2px solid rgb(223, 221, 221);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.editpageGroom {
+    width: 220px;
+    height: 250px;
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+}
+
+.groomName {
+    font-size: 22px;
+    font-family: "Nunito", sans-serif;
+}
+
+.userIcon {
+    color: #1ba7f7;
+}
+
+.btnLightblue {
+    border-radius: 6px;
+    padding: 2px 12px;
+    background-color: #05cbfc;
+    box-shadow: -2px 2px 2px rgb(155, 155, 155);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    margin-right: 0;
+}
+
+.previewEditBtn {
+    border-radius: 6px;
+    padding: 2px 12px;
+    background-color: #ff679a !important;
+    box-shadow: -2px 2px 2px rgb(155, 155, 155);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    margin-right: 0;
+}
+
+.greyBox {
+    border: 1px solid grey;
+}
+
+.basicDetails label {
+    font-family: "Nunito", sans-serif;
+}
+
+.formHead {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.formsubHead {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.preferencesHead {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    background-color: #ff329c;
+    color: white;
+    border-radius: 10px;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+}
+
+.btnUpload {
+    border-radius: 5px;
+    padding: 2px 35px;
+    background-color: #00ccff;
+    color: rgb(13, 13, 13);
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.verticalBorder input {
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+}
+
+.verticalBorder select {
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+}
+
+.verticalBorder textarea {
+    border: 2px solid lightgrey;
+    border-radius: 15px;
+}
+
+.shadowBox {
+    box-shadow: -1px 1px 2px rgb(147, 146, 146);
+    background-color: #fff8f7;
+    border-radius: 15px;
+}
+
+.shadowBox select {
+    background-color: #fff8f7;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+}
+
+.shadowBox textarea {
+    background-color: #fff8f7;
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+}
+
+.leftIcons {
+    vertical-align: middle;
+}
+
+.iconstyle i {
+    vertical-align: middle;
+    color: #3dadf3;
+}
+
+.modalBtn {
+    border-radius: 10px !important;
+    font-family: "Nunito", sans-serif;
+}
+
+@media screen and (max-width:1285px) {
+    .logoBg {
+        margin-left: 0 !important;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .saveBtn,
+    .cancelBtn {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+/* -------- Laptop Edit Page end-------- */
+
+
+/* -------- FeedbackPage start-------- */
+
+.yellowButton {
+    border-radius: 5px;
+    padding: 3px 20px;
+    background-color: #ffcb01;
+    color: rgb(13, 13, 13);
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.greenButton {
+    border-radius: 5px;
+    padding: 3px 20px;
+    background-color: #34cd34;
+    color: rgb(13, 13, 13);
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feedBakBrdeGrmImg {
+    width: 170px;
+    height: 260px;
+    border-radius: 12px;
+}
+
+
+/* -------- FeedbackPage end-------- */
+
+
+/* -------- Preview My Profile start-------- */
+
+.previewContent {
+    margin: 0 40px;
+}
+
+.horoscopeBox {
+    border: 2px solid lightgrey;
+    min-height: 90px;
+}
+
+.previewPara p {
+    font-family: "Nunito", sans-serif;
+}
+
+.locatnandContact {
+    background-color: #f3fbfe;
+}
+
+.editDetails {
+    color: #10b5e3;
+}
+
+.premiumMember {
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    background-color: white;
+    margin-top: -20px;
+}
+
+.premiumHead {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (max-width:478px) {
+    .previewContent {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/* -------- Preview My Profile end-------- */
+
+
+/* -------- Bulk Data Start-------- */
+
+.bulkData td {
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+}
+
+
+/* -------- Bulk Data end-------- */
+
+
+/* -------- Login Page Start-------- */
+
+.pageNumber {
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    border: 2px solid lightblue;
+}
+
+.loginBrideGroomImg {
+    width: 200px;
+    height: 210px;
+    border-radius: 10px;
+}
+
+.personDetails {
+    height: 33px;
+    overflow: hidden;
+    border: 2px solid rgb(234, 232, 232);
+    border-radius: 10px;
+    padding: 3px 40px 3px 5px;
+    box-shadow: 0px 2px 0px rgb(234, 232, 232);
+    background-color: white;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    margin-right: 0;
+    color: black;
+}
+
+.bridendGroomName {
+    border-radius: 10px;
+    padding: 3px 40px 3px 5px;
+    box-shadow: 0px 2px 0px rgb(211, 210, 210);
+    background-color: #ff339a;
+    color: white;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+}
+
+.bridendGroomID {
+    border-radius: 10px;
+    padding: 3px 40px 3px 5px;
+    box-shadow: 0px 2px 0px rgb(211, 210, 210);
+    background-color: #3dadf3;
+    color: white;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+}
+
+.iconBorder {
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+}
+
+.rigtIconPaddng {
+    margin: 0 20px;
+}
+
+.rightSection i {
+    color: #4c4b4b;
+    vertical-align: middle;
+}
+
+.heartIcon {
+    font-size: 30px;
+    color: #e81a81;
+}
+
+.starIcon {
+    font-size: 30px;
+    color: rgb(255, 196, 0);
+}
+
+.eyeIcon {
+    font-size: 30px;
+    color: #05cbfc;
+}
+
+.onlineDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(6, 165, 6);
+}
+
+.pinkStarMobile {
+    font-size: 33px;
+    color: #e81a81 !important;
+}
+
+.closeIcon {
+    font-size: 32px;
+    color: #e81a81 !important;
+}
+
+.loginPageImg {
+    border-radius: 30px !important;
+    /* max-height: 450px; */
+    /* min-height: 450px; */
+    object-fit: cover;
+}
+
+@media screen and (max-width:480px) {
+    .mobileView {
+        height: 100vh;
+    }
+    .loginPageImg {
+        height: 53vh;
+    }
+    .ImgColumn {
+        height: 58vh;
+    }
+    .ContentColumn {
+        height: 42vh;
+    }
+    .personDetails {
+        display: flex;
+        align-items: center;
+        background-color: #e4e4e4;
+        box-shadow: none;
+        /* margin-bottom: 5px; */
+        font-size: 15px;
+        height: 5vh !important;
+        padding-top: 0;
+        overflow: hidden !important;
+    }
+    .mobileviewName {
+        display: flex;
+        align-items: center;
+        height: 5vh !important;
+        overflow: hidden !important;
+    }
+    .mobileviewID {
+        display: flex;
+        align-items: center;
+        height: 5vh !important;
+        overflow: hidden !important;
+    }
+}
+
+
+/* @media screen and (max-width:376px) {
+    .mobileView {
+        height: 100vh;
+    }
+    .loginPageImg {
+        height: 50vh;
+    }
+    .ImgColumn {
+        height: 50vh;
+    }
+    .ContentColumn {
+        height: 50vh;
+    }
+    .personDetails {
+        background-color: #e4e4e4;
+        box-shadow: none;
+        margin-bottom: 5px;
+        font-size: 15px;
+        height: 20px;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width:376px) and (min-height:720px) and (max-height:820px) {
+    .mobileView {
+        height: 100vh;
+    }
+    .loginPageImg {
+        height: 61vh;
+    }
+    .ImgColumn {
+        height: 61vh;
+    }
+    .ContentColumn {
+        height: 39vh;
+    }
+    .personDetails {
+        background-color: #e4e4e4;
+        box-shadow: none;
+        margin-bottom: 5px;
+        font-size: 15px;
+        height: 25px;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .mobileView {
+        height: 100vh;
+    }
+    .loginPageImg {
+        height: 50vh;
+    }
+    .ImgColumn {
+        height: 50vh;
+    }
+    .ContentColumn {
+        height: 50vh;
+    }
+    .personDetails {
+        background-color: #e4e4e4;
+        box-shadow: none;
+        margin-bottom: 2px;
+        font-size: 15px !important;
+        height: 25px !important;
+        padding-top: 0;
+    }
+} */
+
+.loginPageCard {
+    border-radius: 30px;
+    border: 1px solid rgb(252, 129, 150);
+}
+
+.cardText {
+    max-height: 45px;
+}
+
+.lapviewMobileBorder {
+    border-radius: 0px;
+}
+
+@media screen and (max-width:500px) {
+    .personDetails {
+        background-color: #e4e4e4;
+        box-shadow: none;
+        margin-bottom: 8px;
+        font-size: 17px;
+        height: 29px;
+        padding-top: 0;
+    }
+    .bridendGroomName {
+        margin-bottom: 8px;
+        box-shadow: none;
+        font-size: 17px;
+        height: 29px;
+        padding-top: 0;
+    }
+    .bridendGroomID {
+        margin-bottom: 8px;
+        box-shadow: none;
+        font-size: 17px;
+        height: 29px;
+        padding-top: 0;
+    }
+    .cardText {
+        max-height: 35px;
+    }
+    .heartIcon {
+        font-size: 25px;
+    }
+    .closeIcon {
+        font-size: 25px;
+    }
+    .pinkStarMobile {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .rigtIconPaddng {
+        margin: 0;
+    }
+    .mobileSearchIcon {
+        font-size: 20px;
+        color: white;
+        border-radius: 5px;
+        background-color: #ff339a;
+        border: 2px solid #989597;
+        /* padding: 5px; */
+    }
+}
+
+
+/* -------- Login Page End-------- */
+
+
+/* -------- Laptop Payment Start-------- */
+
+.onlineServ {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.cardTitle {
+    border-radius: 10px;
+    background-color: rgb(189, 188, 188);
+}
+
+.rupeeStike {
+    text-decoration: line-through;
+}
+
+.inboxBorder {
+    border: 3px solid rgb(165, 163, 163);
+    border-radius: 10px;
+}
+
+.cardBdr {
+    border-radius: 20px;
+    border: 4px solid rgb(165, 163, 163);
+}
+
+.boxMargin {
+    margin-left: 20px;
+}
+
+.pay {
+    background-color: rgb(165, 163, 163);
+}
+
+.pay:hover {
+    background-color: rgb(165, 163, 163);
+    color: rgb(147, 146, 146);
+}
+
+@media screen and (max-width:1200px) {
+    .boxMargin {
+        margin-left: 0 !important;
+    }
+}
+
+.gonlineServ {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.gcardTitle {
+    border-radius: 10px;
+    background-color: rgb(216, 175, 9);
+}
+
+.grupeeStike {
+    text-decoration: line-through;
+}
+
+.ginboxBorder {
+    border: 3px solid rgb(216, 175, 9);
+    border-radius: 10px;
+}
+
+.gcardBdr {
+    border-radius: 20px;
+    border: 4px solid rgb(216, 175, 9);
+}
+
+.gpay {
+    background-color: rgb(216, 175, 9);
+}
+
+.donlineServ {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.dcardTitle {
+    border-radius: 10px;
+    background-color: rgb(58, 215, 27);
+}
+
+.drupeeStike {
+    text-decoration: line-through;
+}
+
+.dinboxBorder {
+    border: 3px solid rgb(58, 215, 27);
+    border-radius: 10px;
+}
+
+.dcardBdr {
+    border-radius: 20px;
+    border: 4px solid rgb(58, 215, 27);
+}
+
+.dpay {
+    background-color: rgb(58, 215, 27);
+}
+
+.plonlineServ {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.plcardTitle {
+    border-radius: 10px;
+    background-color: rgb(27, 181, 215);
+}
+
+.plrupeeStike {
+    text-decoration: line-through;
+}
+
+.plinboxBorder {
+    border: 3px solid rgb(27, 181, 215);
+    border-radius: 10px;
+}
+
+.plcardBdr {
+    border-radius: 20px;
+    border: 4px solid rgb(27, 181, 215);
+}
+
+.plpay {
+    background-color: rgb(27, 181, 215);
+}
+
+.ponlineServ {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.pcardTitle {
+    border-radius: 10px;
+    background-color: rgb(218, 78, 141);
+}
+
+.prupeeStike {
+    text-decoration: line-through;
+}
+
+.pinboxBorder {
+    border: 3px solid rgb(218, 78, 141);
+    border-radius: 10px;
+}
+
+.pcardBdr {
+    border-radius: 20px;
+    border: 4px solid rgb(218, 78, 141);
+}
+
+.ppay {
+    background-color: rgb(218, 78, 141);
+}
+
+.pponlineServ {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.ppcardTitle {
+    border-radius: 10px;
+    background-color: rgb(125, 44, 129);
+}
+
+.pprupeeStike {
+    text-decoration: line-through;
+}
+
+.ppinboxBorder {
+    border: 3px solid rgb(125, 44, 129);
+    border-radius: 10px;
+}
+
+.ppcardBdr {
+    border-radius: 20px;
+    border: 4px solid rgb(125, 44, 129);
+}
+
+.pppay {
+    background-color: rgb(125, 44, 129);
+}
+
+.activeBtn {
+    background-color: #fe218f !important;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.Btn-Link {
+    background-color: white;
+    color: #fe218f !important;
+    border: none;
+    text-align: center;
+}
+
+.premiumBtnRadius {
+    border-radius: 15px !important;
+    border: 3px solid #fe218f !important;
+}
+
+.enquiry {
+    padding-top: 1000;
+}
+
+
+/* --------  Laptop Payment End-------- */
+
+
+/* --------  View Duplicates Page Start-------- */
+
+.ConvertBtn {
+    background-color: #82cbeb;
+    border-radius: 10px;
+}
+
+.DeleteBtn {
+    background-color: rgb(253, 169, 185);
+    border-radius: 10px;
+}
+
+
+/* --------  View Duplicates Page End-------- */
+
+
+/* -------- Laptop Payment Start-------- */
+
+.onlineServ {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.cardTitle {
+    border-radius: 10px;
+    background-color: rgb(189, 188, 188);
+}
+
+.rupeeStike {
+    text-decoration: line-through;
+}
+
+.inboxBorder {
+    border: 3px solid rgb(165, 163, 163);
+    border-radius: 10px;
+}
+
+.cardBdr {
+    border-radius: 20px;
+    border: 4px solid rgb(165, 163, 163);
+}
+
+.boxMargin {
+    margin-left: 20px;
+}
+
+.pay {
+    background-color: rgb(165, 163, 163);
+}
+
+.pay:hover {
+    background-color: rgb(165, 163, 163);
+    color: rgb(147, 146, 146);
+}
+
+@media screen and (max-width:1200px) {
+    .boxMargin {
+        margin-left: 0 !important;
+    }
+}
+
+.gonlineServ {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.gcardTitle {
+    border-radius: 10px;
+    background-color: rgb(216, 175, 9);
+}
+
+.grupeeStike {
+    text-decoration: line-through;
+}
+
+.ginboxBorder {
+    border: 3px solid rgb(216, 175, 9);
+    border-radius: 10px;
+}
+
+.gcardBdr {
+    border-radius: 20px;
+    border: 4px solid rgb(216, 175, 9);
+}
+
+.gpay {
+    background-color: rgb(216, 175, 9);
+}
+
+.donlineServ {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.dcardTitle {
+    border-radius: 10px;
+    background-color: rgb(58, 215, 27);
+}
+
+.drupeeStike {
+    text-decoration: line-through;
+}
+
+.dinboxBorder {
+    border: 3px solid rgb(58, 215, 27);
+    border-radius: 10px;
+}
+
+.dcardBdr {
+    border-radius: 20px;
+    border: 4px solid rgb(58, 215, 27);
+}
+
+.dpay {
+    background-color: rgb(58, 215, 27);
+}
+
+.plonlineServ {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.plcardTitle {
+    border-radius: 10px;
+    background-color: rgb(27, 181, 215);
+}
+
+.plrupeeStike {
+    text-decoration: line-through;
+}
+
+.plinboxBorder {
+    border: 3px solid rgb(27, 181, 215);
+    border-radius: 10px;
+}
+
+.plcardBdr {
+    border-radius: 20px;
+    border: 4px solid rgb(27, 181, 215);
+}
+
+.plpay {
+    background-color: rgb(27, 181, 215);
+}
+
+.ponlineServ {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.pcardTitle {
+    border-radius: 10px;
+    background-color: rgb(218, 78, 141);
+}
+
+.prupeeStike {
+    text-decoration: line-through;
+}
+
+.pinboxBorder {
+    border: 3px solid rgb(218, 78, 141);
+    border-radius: 10px;
+}
+
+.pcardBdr {
+    border-radius: 20px;
+    border: 4px solid rgb(218, 78, 141);
+}
+
+.ppay {
+    background-color: rgb(218, 78, 141);
+}
+
+.pponlineServ {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.ppcardTitle {
+    border-radius: 10px;
+    background-color: rgb(125, 44, 129);
+}
+
+.pprupeeStike {
+    text-decoration: line-through;
+}
+
+.ppinboxBorder {
+    border: 3px solid rgb(125, 44, 129);
+    border-radius: 10px;
+}
+
+.ppcardBdr {
+    border-radius: 20px;
+    border: 4px solid rgb(125, 44, 129);
+}
+
+.pppay {
+    background-color: rgb(125, 44, 129);
+}
+
+.activeBtn {
+    background-color: #fe218f !important;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.Btn-Link {
+    background-color: white;
+    color: #fe218f !important;
+    border: none;
+    text-align: center;
+}
+
+.premiumBtnRadius {
+    border-radius: 15px !important;
+    border: 3px solid #fe218f !important;
+}
+
+.enquiry {
+    padding-top: 1000;
+}
+
+
+/* --------  Laptop Payment End-------- */
+
+
+/* --------  Laptop Search Page Start-------- */
+
+.searchIcon {
+    color: #00ccfd;
+}
+
+.searchBclr {
+    color: #000;
+}
+
+.arrowSearch {
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.searchColor {
+    color: #e00074;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.searchForm input::placeholder {
+    color: #c0c2c3;
+}
+
+.searchForm {
+    font-family: "Nunito", sans-serif;
+}
+
+.loginPageCrown {
+    width: 80px;
+    height: 80px;
+}
+
+.searchPageCheck {
+    border: 2px solid #e00074;
+}
+
+.searchBg {
+    background-color: rgb(232, 231, 231);
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 40px;
+}
+
+.searchBtn {
+    background-color: #f7175e;
+    color: #f3fbfe;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+}
+
+.LoginMyMatchBtn {
+    border-radius: 10px 0 0 10px !important;
+    box-shadow: 0px 2px 0px rgb(211, 210, 210);
+    border: 2px solid #ff339a !important;
+    background-color: #ff339a !important;
+    color: white !important;
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+}
+
+.LoginPreferenceBtn {
+    border-radius: 0px !important;
+    box-shadow: 0px 2px 0px rgb(211, 210, 210);
+    border: 2px solid #ff339a !important;
+    background-color: white !important;
+    color: #ff339a !important;
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+}
+
+.LoginStarMatchBtn {
+    border-radius: 0 10px 10px 0 !important;
+    box-shadow: 0px 2px 0px rgb(211, 210, 210);
+    border: 1px solid #959294 !important;
+    background-color: white !important;
+    color: #ff339a !important;
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+    border-color: #e000c6;
+}
+
+.searchTab {
+    border-color: #e000c6;
+}
+
+@media screen and (max-width:480px) {
+    .searchTab {
+        padding: 0 0 0 20px;
+    }
+    .searchDmd {
+        background-color: #00ccff;
+        color: white;
+    }
+}
+
+.searchLabel {
+    font-size: 12px;
+}
+
+.homeBtn {
+    color: rgb(244, 10, 151) !important;
+    border-radius: 10px 0 0 10px !important;
+    border: 2px solid rgb(244, 10, 151) !important;
+}
+
+.homeBtn.active {
+    color: white !important;
+    background-color: rgb(244, 10, 151) !important;
+}
+
+.BtnIDSearch {
+    color: rgb(244, 10, 151) !important;
+    border: 2px solid rgb(244, 10, 151) !important;
+    border-radius: 0 !important;
+    border-right: 0 !important;
+}
+
+.BtnIDSearch.active {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(244, 10, 151) !important;
+}
+
+.BtnSaved {
+    color: rgb(244, 10, 151) !important;
+    border: 2px solid rgb(244, 10, 151) !important;
+    border-radius: 0 10px 10px 0 !important;
+}
+
+.BtnSaved.active {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(244, 10, 151) !important;
+}
+
+.borderBottomgrey {
+    border-bottom: 2px solid lightgrey;
+}
+
+.leftSection .account {
+    font-size: 13px;
+}
+
+.leftSection .borderBottom {
+    border-bottom: 2px solid #1ba7f7;
+}
+
+.numBorder {
+    border: 2px solid #1ba7f7;
+    border-radius: 3px;
+}
+
+.leftSection .eye {
+    font-size: 20px;
+    color: #e81a81;
+    vertical-align: middle;
+}
+
+.leftSection .call {
+    font-size: 20px;
+    color: #e81a81;
+    vertical-align: middle;
+}
+
+.leftSection .request {
+    font-size: 20px;
+    color: #e81a81;
+    vertical-align: middle;
+}
+
+.leftSection .accept {
+    font-size: 20px;
+    color: #e81a81;
+    vertical-align: middle;
+}
+
+.tick {
+    font-size: 20px;
+    color: #e81a81;
+    vertical-align: middle;
+}
+
+.heart {
+    font-size: 20px;
+    color: #e81a81 !important;
+}
+
+.pinkStarLaptopView {
+    font-size: 20px;
+    color: #e81a81 !important;
+}
+
+@media screen and (max-width:480px) {
+    .searchForm input::placeholder {
+        color: #000000;
+    }
+}
+
+.searchPageIcon {
+    vertical-align: middle;
+}
+
+.srchNav {
+    font-family: "Nunito", sans-serif;
+}
+
+@media screen and (max-width:1050px) {
+    .headOptions {
+        font-size: 12px;
+        margin-left: 3px !important;
+    }
+    .headlastOption {
+        font-size: 12px;
+        margin-left: 3px !important;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .headStyle {
+        font-size: 12px;
+    }
+    .btnPink {
+        font-size: 10px;
+    }
+    .completed {
+        font-size: 20px;
+    }
+    .leftIcons {
+        font-size: 14px;
+    }
+}
+
+.messages {
+    color: #13a5f9;
+}
+
+.messageOptions {
+    color: #13a5f9;
+}
+
+
+/* --------  Laptop Search Page End-------- */
+
+
+/* --------  Settings Page Start-------- */
+
+.setLeftBut {
+    border-bottom: 2px solid lightgray !important;
+    border-radius: 0 !important;
+    color: #00ccff !important;
+}
+
+.setLeftBut:focus,
+.setLeftBut.active {
+    background-color: #fc0c7c !important;
+    color: white !important;
+}
+
+.setChange {
+    background-color: #fc0c7c;
+    color: rgb(255, 255, 255);
+}
+
+.srchCard {
+    border: 5px solid rgb(221, 221, 206);
+    border-radius: 30px;
+}
+
+.setSet {
+    color: #00ccff;
+}
+
+.setArrowBtn {
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.sBtn {
+    background-color: #fc0c7c;
+    border-radius: 10px;
+    color: white;
+    border: #fc0c7c;
+    font-size: 17px;
+}
+
+.setStar {
+    vertical-align: middle;
+    color: #fc0c7c;
+}
+
+.setBox {
+    border: 3px solid #fc0c7c !important;
+    border-radius: 0;
+    box-shadow: none !important;
+}
+
+.settype input::placeholder {
+    color: black;
+    font-family: "Nunito", sans-serif;
+}
+
+.settype input::option {
+    color: #000;
+    font-family: "Nunito", sans-serif;
+}
+
+.setStoryBtn {
+    color: white;
+    border: none;
+    background-color: #fc0c7c;
+    border-bottom: 2px dashed white;
+}
+
+.setStoryBtnIcon {
+    vertical-align: middle;
+}
+
+.setDelBth {
+    border-radius: 10px;
+    background-color: white;
+    color: #f61515;
+    border: #fc0c7c;
+    font-weight: bold;
+}
+
+.setBtnDel {
+    color: red;
+}
+
+.setBtnPassword {
+    border: none;
+    border-bottom: 3px solid #fc0c7c !important;
+    border-radius: 0;
+    box-shadow: none !important;
+}
+
+.setSpan {
+    position: absolute;
+    z-index: 99;
+    left: 70%;
+}
+
+.setHide {
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 0;
+    background-color: #fc0c7c;
+    color: white;
+    box-shadow: none !important;
+}
+
+.setHideBtn input::placeholder {
+    color: white;
+}
+
+.settingsChoose {
+    padding: 0px;
+    margin: 0px;
+}
+
+.settingsChoose .setAlrtLabel+.setAlrtCheck {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #fc0c7c;
+}
+
+.settingsChoose .setAlrtLabel .iconchecked {
+    /* visibility: hidden; */
+    display: none;
+}
+
+.settingsChoose .setAlrtCheck:checked+label {
+    background-color: #fc0c7c;
+    color: white;
+    border: 3px solid #fc0c7c;
+}
+
+.settingsChoose .setAlrtCheck:checked+label .iconunchecked {
+    /* visibility: hidden; */
+    display: none;
+}
+
+.settingsChoose .setAlrtCheck:checked+label .iconchecked {
+    /* visibility: visible; */
+    display: block;
+}
+
+.settingsChoose label {
+    background-color: white;
+    padding: 15px 10px;
+    width: 100%;
+    height: 100%;
+    color: black;
+    border: 3px solid #fc0c7c;
+}
+
+.settingsAlertCheck {
+    font-size: 17px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+}
+
+
+/* --------  Settings Page End-------- */
+
+
+/* --------  Laptop Privacy Policy Start--------  */
+
+.privacyHead {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.lockIcon {
+    color: #d80056;
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.privacyCard {
+    background: linear-gradient(to right, #f60566, #ff67a8);
+}
+
+@media screen and (min-width:992px) and (max-width:1120px) {
+    .privacyCard {
+        width: 15rem !important;
+    }
+}
+
+.privacyImgText {
+    line-height: 25px;
+}
+
+.privacyCardBg {
+    background: linear-gradient(to right, #f60566, #ff67a8);
+    border-radius: 8px;
+}
+
+.succStoryBtn {
+    color: #f60566;
+    font-family: "Nunito", sans-serif;
+}
+
+.royalMrgBg {
+    background-color: #fff5fb;
+}
+
+.regNowBtn {
+    background-color: #ff43a1;
+    border-radius: 5px;
+}
+
+.missCall {
+    font-weight: bold;
+}
+
+.missedCall {
+    color: #f43779;
+    font-weight: bold;
+}
+
+.missedCallIcon {
+    color: black;
+    vertical-align: middle;
+}
+
+
+/* --------  Laptop Privacy Policy End--------  */
+
+
+/* --------  Laptop HelpLine Start --------  */
+
+.helpHead {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.helpLineIcon {
+    color: white;
+    vertical-align: middle;
+}
+
+.questionBorder {
+    border-radius: 8px;
+}
+
+
+/* --------  Laptop HelpLine End --------  */
+
+
+/* --------  Laptop Add Story Start --------  */
+
+.adStoryBorder {
+    border-radius: 10px;
+    border: 2px solid rgb(227, 225, 225);
+    box-shadow: 0 0 5px 2px rgb(227, 225, 225);
+}
+
+
+/* --------  Laptop Add Story End --------  */
+
+
+/* --------  Staff Assign Start-------- */
+
+.btnLightPink {
+    border-radius: 8px;
+    background-color: #ff98c5;
+    color: white;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+    padding: 3px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.btnLightPink:focus {
+    background-color: #ff98c5;
+    color: white;
+}
+
+.btnBlue {
+    border-radius: 8px;
+    background-color: #52bbf8;
+    color: white;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px;
+    font-family: "Nunito", sans-serif;
+}
+
+.btnBlue:focus {
+    background-color: #52bbf8;
+    color: white;
+    box-shadow: none;
+}
+
+.branchDropDown {
+    padding: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+}
+
+
+/* --------  Staff Assign End-------- */
+
+
+/* --------  Laptop Add Story Start --------  */
+
+.adStoryBorder {
+    border-radius: 10px;
+    border: 2px solid rgb(227, 225, 225);
+    box-shadow: 0 0 22px 10px rgb(241, 239, 239);
+}
+
+.groomId {
+    border: 2px solid rgb(231, 230, 230);
+}
+
+.adStoryBrideImg {
+    border-radius: 10px;
+}
+
+.adStoryCardText {
+    color: #e81a81;
+}
+
+.storyRightSectn {
+    margin: 0 80px;
+}
+
+@media screen and (max-width:500px) {
+    .storyRightSectn {
+        margin: 0 50px;
+    }
+}
+
+.storyBrideName {
+    color: #fc0c7c;
+}
+
+.storyBrideId {
+    font-size: 12px;
+}
+
+.adStoryRightImg {
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+}
+
+.upLoad {
+    vertical-align: middle;
+}
+
+.uploadPhoto {
+    cursor: pointer;
+}
+
+.AddStory {
+    color: #fc0c7c;
+}
+
+.storyLink {
+    text-decoration: underline;
+    text-decoration-color: #fc0c7c;
+}
+
+.aboutUsBg {
+    background-image: url("../IMAGES/AbouUsBg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* --------  Laptop Add Story End --------  */
+
+
+/* --------  Laptop About Us Start --------  */
+
+.aboutUsFreeReg {
+    border-radius: 20px;
+    font-family: "Nunito", sans-serif;
+    color: #ff0185;
+    border: none;
+    box-shadow: 0px 0px 8px 2px lightgrey;
+    background-color: white;
+}
+
+.royalMatrimonyBg {
+    background-image: url("../img/AboutUsbg2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.royalMrgImg {
+    border-radius: 50%;
+    border: 4px solid #ff0185;
+}
+
+.RoyalPara {
+    line-height: 28px;
+}
+
+.royalRegister {
+    background: linear-gradient(to right, #f60566, #ff67a8);
+    border-radius: 20px;
+    border: none;
+    font-family: "Nunito", sans-serif;
+}
+
+.authent {
+    background: linear-gradient(to right, #f60566, #ff67a8);
+    border: 2px solid #ff67a8;
+}
+
+.authentProcess {
+    border: 2px solid #ff67a8;
+}
+
+.authentText {
+    color: #ff0185;
+}
+
+.authentHead {
+    color: #f60566;
+}
+
+.basicFeatures {
+    background-color: #ffecf0;
+}
+
+.malayaliFeatures {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: rgb(246, 5, 102);
+    border: none;
+    box-shadow: 0px 0px 8px 2px lightgrey;
+    background-color: white;
+}
+
+.WifiCallIcon {
+    vertical-align: middle;
+    color: rgb(246, 5, 102);
+}
+
+.horizonLine {
+    border: 2px solid grey;
+}
+
+.authVertBorder {
+    border-right: 3px solid grey;
+}
+
+
+/* --------  Laptop About Us End --------  */
+
+
+/* --------  Branch Master Page Start-------- */
+
+.loader {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.branchborder {
+    border: 2px solid #fc0c7c;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: #ff89c6;
+}
+
+.branchHead {
+    background-color: #fc0c7c;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.branchSubmitDiv {
+    text-align: center;
+}
+
+.branchsubmit {
+    background-color: #fc0c7c;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    border-color: #fc0c7c;
+}
+
+.BranchTableButton {
+    color: #fc0c7c !important;
+    border: 0 !important;
+    background-color: transparent;
+}
+
+@media screen and (min-width:500px) {
+    .branchAlign {
+        padding: 10px 320px 10px 320px;
+    }
+}
+
+.branchEdit {
+    display: none;
+}
+
+
+/* --------  Branch Master Page End-------- */
+
+
+/* --------  Agency Master Page Start-------- */
+
+.agencyborder {
+    border: 2px solid #fc0c7c;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: #ff89c6;
+}
+
+.agencyHead {
+    background-color: #fc0c7c;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.agencySubmitDiv {
+    text-align: center;
+}
+
+.agencysubmit {
+    background-color: #fc0c7c;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    border-color: #fc0c7c;
+}
+
+.agencyTableButton {
+    color: #fc0c7c !important;
+    border: 0 !important;
+    background-color: transparent;
+}
+
+
+/* --------  Agency Master Page End-------- */
+
+
+/* --------  Laptop BulkData Start--------  */
+
+.bulkDataHead {
+    background-color: #fe43a0;
+    color: white;
+    padding: 5px 0 0 0;
+    border-radius: 10px;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+}
+
+@media screen and (max-width:767px) {
+    .bulkDataHead {
+        padding: 5px 3px;
+    }
+}
+
+.bulkDataBorder {
+    border: 2px solid #dbd9d9;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: #ff89c6;
+}
+
+.bulkPinkBtn {
+    background-color: #fb6799;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    padding: 2px 0 !important;
+    font-family: "Nunito", sans-serif;
+}
+
+.bulkPinkBtn:focus {
+    background-color: #fb6799;
+    color: white;
+    box-shadow: none;
+}
+
+.bulkGreenBtn {
+    font-family: "Nunito", sans-serif;
+    border-radius: 8px;
+    font-weight: 400 !important;
+    padding: 2px 0 !important;
+}
+
+.bulkGreenBtn:focus {
+    background-color: #34cd34;
+    color: white;
+    box-shadow: none;
+}
+
+.bulkPeachBtn {
+    background-color: #ff616f;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    padding: 1px 0 !important;
+    font-family: "Nunito", sans-serif;
+}
+
+.bulkPeachBtn:focus {
+    background-color: #ff616f;
+    color: black;
+    box-shadow: none;
+}
+
+.bulkIvoryBtn {
+    background-color: #f9ff9d;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    padding: 1px 0 !important;
+    font-family: "Nunito", sans-serif;
+}
+
+.bulkIvoryBtn:focus {
+    background-color: #f9ff9d;
+    color: black;
+    box-shadow: none;
+}
+
+.bulkBlueBtn {
+    background-color: #00cffe;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    padding: 1px 0 !important;
+    font-family: "Nunito", sans-serif;
+}
+
+.bulkwhiteBtn {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 1px 0 !important;
+    font-family: "Nunito", sans-serif;
+}
+
+.bulkdropDn {
+    border: 2px solid rgb(82, 80, 80);
+}
+
+.reminder {
+    background-color: #fb6799;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 0 !important;
+    font-size: 11px !important;
+    font-family: "Nunito", sans-serif;
+}
+
+@media screen and (max-width:500px) {
+    .reminder {
+        font-size: 20px !important;
+        padding: 7px 0 !important;
+    }
+}
+
+.bulkTextField {
+    border: 1px solid rgb(198, 196, 196);
+    border-radius: 5px;
+    padding: 0 !important;
+}
+
+.bulkTableBorder {
+    border-right: 1px solid lightgrey;
+}
+
+.bulkCheckbox {
+    border: 2px solid rgb(179, 177, 177);
+    cursor: pointer;
+}
+
+.bulklTableText {
+    font-family: 'Arial';
+    font-size: 18px;
+}
+
+.tableDataBorder {
+    border-bottom: 2px solid lightgrey;
+}
+
+.bulkFeedBack {
+    border-radius: 5px;
+    background-color: #fb6799;
+    color: white;
+    box-shadow: -1px 1px 2px rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px;
+    font-family: "Nunito", sans-serif;
+}
+
+.bulkFeedBack:focus {
+    background-color: #fb6799;
+    color: white;
+    box-shadow: none;
+}
+
+.bulkMenu {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fb6799;
+}
+
+.bulkLinkBtn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 11px;
+}
+
+
+/* --------  Laptop BulkData End--------  */
+
+
+/* --------  Laptop Service Page Start --------  */
+
+.servicePageBg {
+    background-color: #fde9f4;
+}
+
+.servicesPara {
+    line-height: 28px;
+}
+
+.mrgServicesImg {
+    border-radius: 15px;
+    border: 3px solid #ff0185;
+}
+
+.servicesWhiteBg {
+    background-color: white;
+}
+
+.servicesMainHead {
+    color: #2094e9;
+}
+
+.mainServicesImg {
+    border-radius: 14px;
+}
+
+.servicesAbvPic {
+    position: absolute;
+    z-index: 99;
+    background-color: white;
+    opacity: 0.6;
+    top: 67%;
+    width: inherit;
+}
+
+.servicePosition {
+    position: relative;
+}
+
+
+/* --------  Laptop Service Page End --------  */
+
+
+/* --------  Laptop Branch Page Start --------  */
+
+.branchHead {
+    letter-spacing: 1px;
+}
+
+.branchAddress {
+    font-family: 'Vollkorn', serif;
+}
+
+.branchBorder {
+    border: 3px solid #ff339a;
+    border-radius: 30px;
+}
+
+@media screen and (min-width:150px) and (max-width:991px) {
+    .branchSeperatn {
+        border-bottom: 3px dashed #ff339a;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1920px) {
+    .branchSeperatn {
+        border-right: 3px dashed #ff339a;
+    }
+}
+
+.branchTableText {
+    font-family: 'Vollkorn', serif !important;
+    font-size: 16px;
+}
+
+.branchTabHead {
+    background: linear-gradient(to right, #f60566, #ff67a8);
+    color: white;
+}
+
+.branBordColor {
+    border: 2px solid lightgray;
+}
+
+.branLoctnIcon {
+    color: #f80466;
+}
+
+
+/* --------  Laptop Branch Page End --------  */
+
+
+/* --------  Laptop Contact Page Start --------  */
+
+.contactHead {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactForm {
+    border: 2px solid lightgrey;
+}
+
+.contctSubmit {
+    padding: 8px 35px !important;
+}
+
+.locationBgwhite {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.addressHead {
+    color: #f80466;
+}
+
+.addressBorder {
+    border-bottom: 2px solid white;
+}
+
+@media screen and (max-width:550px) {
+    .contctrghtSectn {
+        height: 37rem !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contactMail {
+        padding-left: 10px;
+    }
+}
+
+
+/* --------  Laptop Contact Page End --------  */
+
+
+/* --------  Laptop Interests Page Start-------- */
+
+.LaptopInterestsBg {
+    background-color: rgb(239, 239, 239);
+}
+
+@media screen and (max-width:500px) {
+    .LaptopInterestsBg {
+        background-color: white;
+    }
+}
+
+.pinkStarLaptopView {
+    font-size: 20px;
+    color: #e81a81 !important;
+}
+
+.handIcon {
+    font-size: 20px;
+    color: #e81a81 !important;
+    vertical-align: middle;
+}
+
+.blockIcon {
+    font-size: 20px;
+    color: #e81a81 !important;
+    vertical-align: middle;
+}
+
+.numBorder {
+    border: 2px solid #1ba7f7;
+    border-radius: 3px;
+}
+
+.tabMainBorder {
+    border-radius: 5px;
+    border: 2px solid #1ba7f7 !important;
+    box-sizing: border-box !important;
+}
+
+.interestMainTabs {
+    font-size: 17px;
+    border-radius: 0 !important;
+    border-right: 2px solid #1ba7f7 !important;
+    font-family: "Nunito", sans-serif;
+    padding: 6px;
+}
+
+.interestLastTab {
+    font-size: 17px;
+    border-radius: 0 !important;
+    font-family: "Nunito", sans-serif;
+    padding: 6px;
+}
+
+.interestMainTabs.active {
+    background-color: #1ba7f7 !important;
+    /* border-left: 0 !important; */
+    color: white !important;
+}
+
+.laptopViewTabBtn {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Nunito", sans-serif;
+    border-bottom: 4px solid rgb(235, 232, 232) !important;
+    border-radius: 0 !important;
+}
+
+.laptopViewTabBtn.active {
+    background-color: white !important;
+    border-bottom: 4px solid #e81a81 !important;
+    color: #0d6efd !important;
+}
+
+.TabBtnSelected {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Nunito", sans-serif;
+    border-bottom: 4px solid rgb(235, 232, 232) !important;
+    border-radius: 0 !important;
+}
+
+.TabBtnSelected.active {
+    background-color: white !important;
+    border-bottom: 4px solid #e81a81 !important;
+    color: #0d6efd !important;
+}
+
+.lastSeen {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgb(5, 197, 5);
+}
+
+.binIcon {
+    font-size: 25px;
+    color: #e81a81 !important;
+}
+
+.laptopViewEyeIcon {
+    font-size: 26px;
+    color: #06b5e1 !important;
+}
+
+.interestMobileTab {
+    border-radius: 0px !important;
+    border-left: none !important;
+    box-shadow: 0px 2px 0px rgb(211, 210, 210);
+    border: 2px solid #ff339a !important;
+    background-color: white !important;
+    color: #ff339a !important;
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+}
+
+.contactMobileTab {
+    border-radius: 0 10px 10px 0 !important;
+    box-shadow: 0px 2px 0px rgb(211, 210, 210);
+    border: 2px solid #ff339a !important;
+    background-color: white !important;
+    color: #ff339a !important;
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+}
+
+.InterestsPageImg {
+    width: 170px;
+    height: 175px;
+    border-radius: 10px;
+}
+
+.lapInterstsMobileImg {
+    border-radius: 10px;
+}
+
+.brideandGroomDetails {
+    height: 33px;
+    overflow: hidden !important;
+    border: none !important;
+    border-bottom: 2px solid rgb(158, 157, 157) !important;
+    border-radius: 10px;
+    padding: 3px 10px 3px 5px;
+    font-size: 19px;
+    font-family: Arial;
+    margin-right: 0;
+    color: black;
+}
+
+@media screen and (max-width:500px) {
+    .brideandGroomDetails {
+        border-radius: 0 !important;
+        border-bottom: none !important;
+    }
+}
+
+.interestsMobileBorder {
+    border-bottom: 2px solid #ff339a;
+}
+
+.leftsectnCrownBox p {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.leftsectnCrownBox h6 {
+    font-size: 10px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+    .heartIconMobile {
+        font-size: 25px;
+        color: #e81a81 !important;
+    }
+}
+
+
+/* -------- Laptop Interests Page End -------- */
+
+
+/* -------- Laptop Inbox Page Start -------- */
+
+.inboxProfile {
+    height: 33px;
+    overflow: hidden !important;
+    border: none !important;
+    border-bottom: 2px solid lightgrey !important;
+    padding: 3px 10px 3px 5px;
+    font-size: 19px;
+    font-family: Arial;
+}
+
+.inboxAccept {
+    color: #078bd7;
+    border-radius: 5px;
+    border: 2px solid #078bd7;
+}
+
+.inboxDecline {
+    color: #eb2e82;
+    border-radius: 5px;
+    border: 2px solid #eb2e82;
+}
+
+.inboxClose {
+    color: #eb2e82 !important;
+}
+
+.inboxMainTabs {
+    font-size: 17px;
+    border-radius: 0 !important;
+    border-right: 2px solid #ff339a !important;
+    background-color: #ff339a !important;
+    font-family: "Nunito", sans-serif;
+    padding: 6px;
+    color: white;
+}
+
+.inboxLastTab {
+    font-size: 17px;
+    border-radius: 0 !important;
+    background-color: #ff339a !important;
+    font-family: "Nunito", sans-serif;
+    padding: 6px;
+    color: white;
+}
+
+.inboxMainTabs.active {
+    background-color: #1ba7f7 !important;
+    color: white !important;
+}
+
+.inboxLastTab.active {
+    background-color: #1ba7f7 !important;
+    color: white !important;
+}
+
+.inboxinactiveTab {
+    border-color: #ff339a !important;
+}
+
+.inboxReceived {
+    color: grey;
+}
+
+.inboxRemind {
+    background-color: #ffcc00;
+    border-radius: 5px;
+    border: none;
+}
+
+.inboxInterest {
+    background-color: #3ec43d;
+    border-radius: 5px;
+    border: 2px solid #31a830;
+    color: #31a830;
+}
+
+.inboxCancel {
+    position: absolute;
+    z-index: 99;
+    left: 42%;
+}
+
+.mobileCancel {
+    color: grey;
+}
+
+.inboxMobAccept {
+    background-color: #00ccfd;
+    border-radius: 5px;
+    border: none;
+}
+
+.inboxMobDecline {
+    background-color: #fb3597;
+    border-radius: 5px;
+    border: none;
+}
+
+.inboxMobBorder {
+    border-bottom: 2px solid lightgray;
+}
+
+.msgBox {
+    padding: 10px 10px;
+}
+
+.profFeatured {
+    font-size: 11px !important;
+}
+
+.inboxMobUser {
+    color: #fb3597;
+}
+
+.clickHere {
+    font-size: 13px;
+}
+
+.invitefrnd {
+    line-height: 17px;
+}
+
+.mobileMrglogo {
+    text-align: end !important;
+}
+
+@media screen and (min-width:380px) and (max-width:420px) {
+    .inboxTabBtn {
+        padding: 6px 16px !important;
+    }
+}
+
+
+/* -------- Laptop Inbox Page End -------- */
+
+.inboxMobBorder {
+    border-bottom: 2px solid lightgray;
+}
+
+
+/*----------- Masters Table------------------*/
+
+:root {
+    --textColor: rgb(46, 110, 239);
+    --backgroundColor: #5468ff;
+    --textSecondary: #0b1980;
+    --backgroundSecondary: #1BA7F7;
+    --textColor: #6aaf01;
+    --textSecondary: black;
+    --backgroundColor: #6aaf01;
+    /* --backgroundSecondary: #1BA7F7; */
+    --backgroundHover: rgb(178, 178, 178);
+    --buttonGradient1: rgba(14, 174, 87, 1);
+    --buttonGradient2: rgba(123, 216, 96, 1);
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.mainContents {
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+
+.main_card {
+    border-radius: 30px;
+    min-height: 650px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: -2px -2px 4px rgb(0, 0, 0);
+    padding-top: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #f54d74;
+    font-weight: 700;
+    text-shadow: -1px 1px 2px rgb(96, 99, 99);
+    font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+    font-size: 28px;
+    padding-top: 5px;
+}
+
+.mainHead {
+    text-align: center;
+    /* padding-left: 140px; */
+}
+
+.table {
+    background-color: white;
+}
+
+.AddBtn {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient( 100% 100% at 100% 0, #f8116d 0, #fd7ba0 100%);
+    border: 0;
+    border-radius: 30px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    margin: 0 5px 8px 0;
+    font-family: "Nunito", sans-serif;
+}
+
+.AddBtn:focus {
+    box-shadow: #fc1f78 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #fc1f78 0 -3px 0 inset;
+}
+
+.AddBtn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #fc1f78 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.AddBtn:active {
+    box-shadow: #fc1f78 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.btn-info {
+    margin: 10px;
+    padding: 12px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 30px;
+    display: block;
+    border: 0px;
+    box-shadow: 0px 0px 14px -7px #f8116d;
+    background-image: linear-gradient( 45deg, #f8116d 0%, #fd7ba0 51%, #f8116d 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 30px 20px;
+}
+
+.btn-info:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-info:active {
+    transform: scale(0.95);
+}
+
+h5 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 26px;
+    padding-top: 15px;
+}
+
+.modal-body {
+    font-size: 20px;
+    color: black;
+    padding-top: 30px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.ri-edit-line {
+    padding-left: 8px;
+}
+
+.ri-delete-bin-5-line {
+    padding-left: 20px;
+}
+
+.modal-content {
+    border-radius: 30px;
+}
+
+.cntrymodalbg {
+    background-color: #fde4eb;
+}
+
+.mainContents .mastertable tbody .btn_actions {
+    margin: 0px;
+    padding: 0px;
+    color: gray;
+    border: none;
+}
+
+.mainContents .mastertable tbody .btn_actions i {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.mainContents .mastertable tbody .btn_edit:hover {
+    color: rgb(1, 133, 1);
+}
+
+.mainContents .mastertable tbody .btn_delete:hover {
+    color: rgb(184, 0, 0);
+}
+
+.edit-tooltip {
+    --bs-tooltip-bg: var(--bs-success);
+    --bs-tooltip-padding-x: 20px;
+    --bs-tooltip-padding-y: 10px;
+}
+
+.view-tooltip {
+    --bs-tooltip-bg: var(--bs-info);
+    --bs-tooltip-padding-x: 20px;
+    --bs-tooltip-padding-y: 10px;
+}
+
+.delete-tooltip {
+    --bs-tooltip-bg: var(--bs-danger);
+    --bs-tooltip-padding-x: 20px;
+    --bs-tooltip-padding-y: 10px;
+}
+
+.dataTables_scrollHeadInner {
+    margin-top: -7px;
+}
+
+.disable {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.top {
+    margin-top: 5px;
+    padding: 0px 15px;
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .dataTables_filter input {
+    min-width: 25rem;
+    height: 2rem;
+}
+
+.top .dataTables_length label {
+    padding-left: 150px !important;
+}
+
+.top .dataTables_length label select {
+    height: 2rem;
+    min-width: 5rem;
+    text-align: center;
+}
+
+.top .paginate_button a {
+    color: black;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+.top .pagination .active a {
+    background-color: var(--backgroundSecondary);
+    border: 1px solid var(--backgroundSecondary);
+    color: white;
+}
+
+.bottom {
+    border-top: 1px solid lightgray;
+    padding: 3px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .dataTables_info {
+    color: black;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.bottom .paginate_button a {
+    color: black;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+.bottom .pagination .active a {
+    background-color: var(--backgroundSecondary);
+    border: 1px solid var(--backgroundSecondary);
+    color: white;
+}
+
+.mainContents .admintoolbar #SearchBar,
+.mainContents .admintoolbar select {
+    background-color: #f1f1f1;
+}
+
+
